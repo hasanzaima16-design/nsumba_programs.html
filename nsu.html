@@ -1,0 +1,2094 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <base href="https://www.northsouth.edu/">
+    <!--[if IE]>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>MBA/EMBA Programs | North South University</title>
+    <meta name="description" content="North South University is the first private university of Bangladesh, was established in 1992">
+    <meta name="keywords" content="NSU,North South University,nsu,nsu bd,private university bd,university,bd university">
+    <meta name="author" content="North South University">
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="google-site-verification" content="BJURJjWfIslCAsbu0-WFXPORa09RFWOo9h5JenrysZ4" />
+
+    <link rel="icon" type="image/png" href="http://www.northsouth.edu/favicon.png" />
+    <link rel="stylesheet" href="newassets/stylesheets/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="newassets/stylesheets/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="newassets/stylesheets/jquery.fancybox.css" type="text/css" />
+    <link rel="stylesheet" href="newassets/stylesheets/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="newassets/stylesheets/newstyle.css?v=" type="text/css" />
+    <link rel="stylesheet" href="newassets/stylesheets/responsive-utilities.css" type="text/css" />
+    <script type="text/javascript" src="newassets/javascript/jquery.js"></script>
+    <script type="text/javascript" src="newassets/javascript/popper.min.js"></script>
+    <script type="text/javascript" src="newassets/javascript/bootstrap.min.js"></script>
+    <script type="text/javascript" src="newassets/javascript/owl.carousel.js"></script>
+    <script type="text/javascript" src="newassets/javascript/jquery.fancybox.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#admissionModal').modal('show');
+            $('.fancybox-media').fancybox({
+                openEffect: 'none',
+                closeEffect: 'none',
+                helpers: {
+                    media: {}
+                }
+            });
+            $('.fancybox').fancybox();
+            $(".main-slider").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 13000,
+                dots: false,
+                items: 1,
+                nav: true,
+                touchDrag:false,
+                mouseDrag:false
+            });
+            $(".news-carousel").owlCarousel({
+                loop: false,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                dots: false,
+                items: 2,
+                nav: true,
+                margin: 5,
+                touchDrag:false,
+                mouseDrag:false
+            });
+
+$('#admissionModal').on('hidden.bs.modal', function (e) {
+    $("#video").attr('src',""); 
+console.log("src removed");
+});
+
+            function fader() {
+                var yourFade = 2,
+                    yourDelay = 3,
+                    fadeTime = yourFade * 1000,
+                    delayTime = yourDelay * 1000,
+                    totalTime = fadeTime + delayTime,
+                    allElems,
+                    elemNoFade,
+                    i,
+                    fadingElem;
+
+                for (i = 0, allElems = $('.toBeFaded').length, elemNoFade = allElems - 1; i < allElems; i += 1) {
+                    fadingElem = "#elem" + i;
+                    if (i === 0) {
+                        $(fadingElem).fadeIn(fadeTime).delay(delayTime).fadeOut(fadeTime);
+                    } else if (i === elemNoFade) {
+                        $(fadingElem).delay(totalTime * i).fadeIn(fadeTime);
+                    } else {
+                        $(fadingElem).delay(totalTime * i).fadeIn(fadeTime).delay(delayTime).fadeOut(fadeTime);
+                    }
+                }
+            }
+            fader();
+            setInterval(function() {
+                $("#elem0").css('display', 'none');
+                $("#elem1").css('display', 'none');
+                fader()
+            }, 8000);
+        });
+
+    </script>
+</head>
+
+<body>
+<div class="header-wrapper header-position">
+    <header id="header" class="container-header type1">
+        <div class="top-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="top-right col-sm-12">
+                        <nav class="navbar navbar-light navbar-expand-lg">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://rds3.northsouth.edu/index.php/nsuresearch"> Publications</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="http://institutions.northsouth.edu/oea/">International Students</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="academic/academic-calendar/">Academic Calendar</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="newsletter.html">Newsletters</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="journals.html">Journals</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="newsletter/nsu-catalog.html"> Catalog</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="http://library.northsouth.edu"> Library</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="all-career-at-nsu/"> Career</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="archive.html"> Archive</a></li>
+                                  <li class="nav-item"> <a class="nav-link" href="contact-us.html"> Contact Us</a></li>
+                                    <li class="top-search">
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-logo d-xl-none"><img src="newassets/images/logo.png" alt="logo" width="320"></div>
+        <div class="header-middle">
+            <div class="container">
+                <div class="menu">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+    <a class="navbar-brand d-none d-xl-block" href="#"><img src="newassets/images/nsu-photo/logo-4.png" width="400"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse js-navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+            <li style="display:block;"><a href="https://www.northsouth.edu/"
+                                                                                           title="Home">Home</a></li>
+            <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-lg-3" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">ABOUT NSU</li>
+                            <li><a href="about/brief-history/" title="Brief History">Brief History</a></li>
+                            <li><a href="about/vms.html" title="NSU Vision, Mission and Strategy">Vision, Mission &amp;
+                                Strategy</a></li>
+
+                        <li><a href="about/int-ab.html" title="International Advidropdown-menusory Board">International 
+                                Advisory Board</a></li>
+                            <li><a href="about/accreditation.html" title="Accreditation">Accreditation</a></li>
+                            <li><a href="about/international-recognition.html" title="International Recognition">International Recognition</a></li>
+                            <li><a href="about/facts.html" title="Facts About NSU">Facts About NSU</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">NSU Trustees</li>
+                       <!--     <li><a href="about/bot/chairman-bot-22082022.html" title="Chairman of the Board of Trustees (BOT)">Message From
+                                Chairman BOT</a></li> -->
+                            <li><a href="about/bot/">Board of Trustees</a></li> 
+                        <!--    <li><a href="about/bot/nsu-trust-22082022.html" title="Members of the NSU Trust">Members of the NSU Trust</a></li>    -->
+                        </ul>
+                    </li>
+
+                    <li class="col-lg-3" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">Executive Leaders</li>
+
+                            <!-- <li><a href="" target="_blank" title="About Vice-Chancllor ">About Vice-Chancllor</a></li>
+                            <li><a href="about/executive-leaders.html" target="_blank" title="Executive Leader">Board of Trustees</a></li>
+                            <li><a href="about/executive-leaders.html" target="_blank" title="Executive Leader">Int'l Advisory Board
+                                (IAB)</a></li>
+                            <li><a href="about/executive-leaders.html" target="_blank" title="Syndicate">Syndicate</a></li>-->
+                            <li><a href="about/executive-leaders.html#one" target="_blank" title="Vice, Pro Vice & Treasurer ">VC, Pro-VC &
+                                Treasurer</a></li>
+                            <li><a href="about/executive-leaders.html#six" target="_blank" title="Deans, Chairs & Directors">Deans, Chairs &
+                                Directors</a></li>
+                            <li><a href="about/executive-leaders.html#two" target="_blank" title="Administration">Administration </a></li>
+                        </ul>
+
+                    </li>
+
+
+                    <li class="col-lg-3">
+                        <ul>
+                            <li class="dropdown-header dh">Authorities</li>
+                           <li><a href="/newassets/images/Registrs Office/memberlist-syndicate-18may2026.pdf" target="_blank" title="Syndicate">Syndicate</a></li> 
+             <li><a href="/newassets/images/Registrs Office/acmemberlist-12042026.pdf" target="_blank"
+                                   title="Academic Council">Academic Council</a></li> 
+
+
+                            <!-- <li><a href="" title="Curriculum Committee">Curriculum Committee</a></li>
+                             <li><a href="" title="Finance Committee">Finance Committee</a></li>
+                             <li><a href="" title="Faculty Appointment Committee">Faculty Appointment Committee</a></li>
+                             <li><a href="" title="Disciplinary Committee">Disciplinary Committee</a></li>
+                             <li><a href="" title="Administrative Appointment Committee">Administrative Appointment Committee</a></li>
+                             <li><a href="" title="Other Committees">Other Committees</a></li>-->
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Academic <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-lg-4" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header"><a href="academic/sbe/">School of Business &amp; Economics
+                            </a></li>
+                            <li><a href="academic/sbe/acc-fin/" title="Department of Accounting &amp; Finance">Accounting &amp;
+                                Finance</a></li>
+                            <li><a href="academic/sbe/economics.html" title="Department of Economics">Economics</a></li>
+                            <li><a href="academic/sbe/mgt.html" title="Department of Management">Management</a></li>
+                            <li><a href="academic/sbe/mib.html" title="Department of Marketing &amp; International Business">Marketing
+                                &amp; International Business</a></li>
+                            <li><a href="academic/sbe/mba-emba/" title="MBA &amp; EMBA Programs">MBA &amp; EMBA Programs</a></li>
+                            <li><a href="academic/sbe/bba-program.html" title="BBA Program">BBA Program</a></li>
+                            <li class="divider"></li>
+
+<li class="divider"></li>
+                            <li class="dropdown-header"><a href="academic/seps/">School of Engineering &amp; Physical
+                                Sciences</a></li>
+                            <li><a href="academic/seps/architecture.html" title="Department of Architecture">Architecture</a></li>
+                            <!--<li><a href="" title="Department of Civil and Environmental Engineering">Civil and Environmental Engineering</a></li>-->
+                            <li><a href="academic/seps/cee/"
+                                   title="Department of Civil and Environmental Engineering">Civil and Environmental
+                                Engineering</a></li>
+                            <li><a href="http://ece.northsouth.edu/"
+                                   title="Department of Electrical &amp; Computer Engineering">Electrical &amp; Computer
+                                Engineering</a></li>
+                            <li><a href="academic/seps/math-physics/" title="Department of Mathematics &amp; Physics">Mathematics &amp;
+                                Physics</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-4" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header"><a href="academic/shss/">School of Humanities &amp; Social
+                                Sciences</a></li>
+                     <!--   <li><a href="" title="Department of English &amp; Modern Languages">English &amp;
+                                Modern Languages</a></li>  -->
+
+                            <li><a href="academic/shss/lml.html" title="Department of English &amp; Modern Languages">English &amp;
+                                Modern Languages</a></li>
+
+                            <li><a href="academic/shss/pss/" title="Department of Political Science &amp; Sociology">Political
+                                Science &amp; Sociology</a></li>
+                            <li><a href="academic/shss/law/" title="LLB">Law</a></li>
+                            <li><a href="academic/shss/dhp.html" title="Department of History &amp; Philosophy">History &amp;
+                                Philosophy</a></li>
+
+<li><a href="academic/shss/dmcj.html" title="Department of Media, Communication, and Journalism">Media, Communication, and Journalism</a></li>
+
+                    <!--        <li><a href="javascript:void(0)" style="cursor:none;">&nbsp;</a></li> -->
+                            <li class="divider"></li>
+                            <li class="dropdown-header"><a href="academic/shls/">School of Health &amp; Life Sciences</a></li>
+                            <li><a href="academic/shls/bmd/" title="Department of Biochemistry &amp; Microbiology">Biochemistry
+                                &amp; Microbiology</a></li>
+                            <li><a href="academic/shls/esm/" title="Department of Environmental Science &amp; Management">Environmental
+                                Science &amp; Management</a></li>
+                            <li><a href="academic/shls/pharmacy/" title="Department of Pharmaceutical Sciences">Pharmaceutical
+                                Sciences</a></li>
+                            <li><a href="academic/shls/public-health.html" title="Department of Public Health">Public Health</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-4">
+                        <ul>
+                            <li class="dropdown-header dh">Institutes &amp; Centers</li>
+                            <li><a href="academic/shss/lml-01/" title="Institute of Modern Languages">Institute of Modern
+                                Languages</a></li>
+                            <li><a href="academic/ic/confucius-institute.html" title="Confucius Institute">Confucius Institute</a></li>
+
+                            <li><a href="research-innovation/nghi/" title="NSU Global Health Institute">NSU Global Health Institute
+                                (NGHI)</a></li>
+                            <li><a href="research-innovation/nsu-genome-research-institute.html" title="">NSU Genome Research Institute (NGRI)</a></li>
+                   <!--          <li><a href="https://nsuiqac.org/"
+               title="Institutional Quality Assurance Cell (IQAC)">Institutional Quality Assurance Cell (IQAC)</a></li> -->
+
+                            <li><a href="https://cpc.northsouth.edu/"   
+                                   title="">Career & Placement Center (CPC)</a></li>
+                                   <!-- cpc/ -->
+                           <li><a href="https://www.northsouth.edu/sipg/"
+                                   title="South Asian Institute of Policy and Governance (SIPG)">South Asian Institute of Policy and Governance (SIPG)</a></li>
+
+<li><a href="http://www.northsouth.edu/research-innovation/cbr"
+                                   title="NSU Center for Business Research (NSU CBR)">NSU Center for Business Research (NSU CBR)</a></li>
+
+<li><a href="https://www.northsouth.edu/academic/ic/cirs.html"
+                                   title="Center for Infrastructure Research and Services">Center for Infrastructure Research and Services (CIRS)</a></li>
+<li><a href="https://www.cscssnsu.org/"
+                                   title="CSCSS">China–South Asia Center for Sociocultural Studies (CSCSS)</a></li>
+
+<li><a href="http://www.northsouth.edu/resources/cwc.html"
+                                   title="Counseling & Wellbeing Center (CWC)">NSU Counseling & Wellbeing Center (CWC)</a></li>
+                            <li class="divider"></li>
+
+<li><a href="http://www.northsouth.edu/sipg/cms.html"
+                                   title="Center for Migration Studies (CMS)">Center for Migration Studies (CMS)</a></li>
+<li><a href="https://www.cpsnsu.org/"
+                                title="Center for Peace Studies (CPS)">Center for Peace Studies (CPS)</a></li>
+<li><a href="https://northsouth.edu/csis/"
+                                   title="Center for Social Impact and Sustainability (CSIS)">Center for Social Impact and Sustainability (CSIS)</a></li>                         
+
+<li><a href="https://www.northsouth.edu/academic/ic/cdr.html"
+                                title="Center for Climate Change and Disaster Resilience (CDR)">Center for Climate Change and Disaster Resilience (CDR)</a></li>
+
+<li><a href="https://www.northsouth.edu/academic/ic/sbc.html"
+                                title="NSU Social Business Center (SBC)">NSU Social Business Center (SBC)</a></li>
+
+<li><a href="https://www.northsouth.edu/academic/ic/ace.html"
+                         title="Agribusiness Centre of Excellence">Agribusiness Centre of Excellence (ACE)</a></li>
+
+
+                            <li class="dropdown-header">Miscellaneous</li>
+                            <!-- <li><a href="academic/student-code-of-conduct-02042018.html" title="">Student Code of Conduct</a></li> -->
+                            <li><a href="academic/grading-policy.html" title="Grading Policy">Grading Policy</a></li>
+                            <li><a href="academic/student-records.html" title="Student Records">Student Records</a></li>
+                            <li><a href="/newassets/images/5-80.17-09-2023 Academic Information and Policies.pdf" title="Academic Information and Policies">Academic
+                                Information and
+                                Policies</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Faculty <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-lg-6" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">School of Business &amp; Economics</li>
+                            <li><a href="faculty-members/sbe/acc-fin/" title="Department of Accounting &amp; Finance">Accounting &amp;
+                                Finance</a></li>
+                            <li><a href="faculty-members/sbe/economics/" title="Department of Economics">Economics</a></li>
+                            <li><a href="faculty-members/sbe/mgt/" title="Department of Management">Management</a></li>
+                            <li><a href="faculty-members/sbe/marketing-ib/" title="Department of Marketing &amp; International Business">Marketing
+                                &amp; International Business</a></li>
+
+                            <li class="divider"></li>
+                            <li class="dropdown-header">School of Engineering&amp; Physical Sciences</li>
+                            <li><a href="faculty-members/seps/architecture/" title="Department of Architecture">Architecture</a></li>
+                            <li><a href="faculty-members/seps/cee/" title="Department of Civil and Environmental Engineering">Civil and Environmental Engineering</a></li>
+                            <!--<li><a href="http://institutions.northsouth.edu/cee/main/people/faculty.html"
+                                   title="Department of Civil and Environmental Engineering">Civil and Environmental
+                                Engineering</a></li>-->
+                            <li><a href="http://ece.northsouth.edu/people/type/faculty/"
+                                   title="Department of Electrical &amp; Computer Engineering">Electrical &amp; Computer
+                                Engineering</a></li>
+                            <li><a href="faculty-members/seps/mathematics-physics/" title="Department of Mathematics &amp; Physics">Mathematics &amp;
+                                Physics</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-6">
+                        <ul>
+                            <li class="dropdown-header">School of Humanities &amp; Social Sciences</li>
+                            <li><a href="faculty-members/shss/eml/" title="Department of English &amp; Modern Languages">English &amp;
+                                Modern Languages</a></li>
+                            <li><a href="faculty-members/shss/pss/" title="Department of Political Science &amp; Sociology">Political
+                                Science &amp; Sociology</a></li>
+                            <li><a href="faculty-members/shss/law/" title="LLB">Law</a></li>
+                            <li><a href="faculty-members/shss/history-philosophy/" title="Department of History &amp; Philosophy">History &amp;
+                                Philosophy</a></li>
+                           <li><a href="faculty-members/shss/faculty-mcj/" title="Department of Media, Communication, and Journalism">Media, Communication, and Journalism</a></li>
+
+
+                            <li class="divider"></li>
+                            <li class="dropdown-header">School of Health &amp; Life Sciences</li>
+                            <li><a href="faculty-members/shls/biochemistry-microbiology/" title="Department of Biochemistry &amp; Microbiology">Biochemistry
+                                &amp; Microbiology</a></li>
+                            <li><a href="faculty-members/shls/esm/" title="Department of Environmental Science &amp; Management">Environmental
+                                Science &amp; Management</a></li>
+                            <li><a href="faculty-members/shls/pharmacy/" title="Department of Pharmaceutical Sciences">Pharmaceutical
+                                Sciences</a></li>
+                            <li><a href="faculty-members/shls/pbh/" title="Department of Public Health">Public Health</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
+
+
+
+
+            <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Admission
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+
+                    <li class="col-lg-4" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header dh">Admission Information</li>
+                             <li><a href="http://admissions.northsouth.edu/"
+                                   title="Admissions Home Page">Admissions Home Page</a>
+                            <li><a href="http://admissions.northsouth.edu/undergraduate_requirement"
+                                   title="Undergraduate Admission Requirements">Undergraduate Admission Requirements</a>
+                            </li>
+                            <li><a href="http://admissions.northsouth.edu/graduate_requirement"
+                                   title="Graduate Admission Requirements">Graduate Admission Requirements</a></li>
+                            <li><a href="http://admissions.northsouth.edu/int_student"
+                                   title="Admission of International Applicants">Admission of International
+                                Applicants</a></li>
+                            <li><a href="https://admissions.northsouth.edu/nondegree" title="Non-degree Students">Non-degree
+                                Students</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="col-lg-4" style="border-right:1px dashed #105BC0">
+                        <ul class="others">
+                            <li><a href="resources/fao.html" title="Financial Assistance">Financial Aid</a></li>
+                            <li><a href="tuition-fees/" title="Tuition and Other Fees">Tuition and Other Fees</a></li>
+                            <li><a href="http://admissions.northsouth.edu/tuition" title="Tuition and Other Fees">Tuition
+                                Fee Calculator</a></li>
+                            <li><a href="http://admissions.northsouth.edu/faq" title="Frequently Ask Questions">Frequently
+                                Ask Questions</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="col-lg-4">
+                        <ul>
+                            <li><a href="http://admissions.northsouth.edu/transfer" title="Transfer of Students">Transfer
+                                of Students</a></li>
+                            <li><a href="http://admissions.northsouth.edu/transfer" title="Credit Transfer">Credit
+                                Transfer</a></li>
+                            <li><a target="_blank" href="http://admissions.northsouth.edu/ug_download"
+                                   title="UG Admission Test- Sample Question">UG Admission Test- Sample Question</a>
+                            </li>
+                       <!--     <li style="margin-top:15px"><a
+                                    href="http://apply.northsouth.edu:8080/admissionWeb/login.view"
+                                    class="btn btn-md btn-success admit-btn">Apply Now</a></li> -->
+                        </ul>
+
+                    </li>
+                </ul>
+            </li>
+            
+         <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">NSU Online
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-lg-4">
+                        <ul>
+                            <li class="dropdown-header dh">NSU Online Systems</li>
+                            <li><a href="http://portal.northsouth.edu/" title="Faculty Portal">Faculty Portal (RDS)</a>
+                            </li>
+<li><a href="http://portal.northsouth.edu/" title="Employee Portal">Employee Portal (RDS)</a>
+                            </li>
+
+                            <li><a href="http://portal.northsouth.edu/" title="Online Student Portal">Student Portal
+                                (RDS)</a></li>
+                             <li><a href="https://rds3.northsouth.edu/index.php/welcome/parent_login" title="Online Parent Portal">Parent Portal
+                                (RDS)</a></li>
+
+<li><a href="http://apply.northsouth.edu:8080/admissionWeb/login.view"
+                                   title="Apply for Online Admission">Online Admission</a></li>
+
+                       
+<li><a href="https://rds3.northsouth.edu/index.php/verification/verification" title="" target="_blank">Online Degree Verification</a>
+
+<li><a href="https://jobs.northsouth.ac.bd/" title="" target="_blank">Online Job Portal</a>
+
+
+                            </li>  
+                        </ul>
+                    </li>
+                    <li class="col-lg-4">
+
+ <ul>
+
+
+
+
+<li class="dropdown-header dh">Faculty: Guidelines (Step by Step)</li>
+                           
+  <li><a href="http://www.northsouth.edu/newassets/images/5-477.GoogleVirtualClassANDOnlineMeetLink.pdf"
+     title="How to Create New Virual Class & Generate Meet Link" target="_blank">Online Google Class (New Class & Meet Link) </a></li>
+
+<!--   <li><a href="/newassets/images/IT/OnlineClassRoom- Faculty.pdf"
+     title="Guideline for Faculty Online Class" target="_blank">Faculty: Online ClassRoom </a></li>  -->
+
+   <li><a href="/newassets/images/IT/ArchiveCreateNewClassWithMeetLink.pdf"
+     title="How to Archive Virual Class, Create New & Generate Meet Link" target="_blank"> Online Google Class (Archiving Process) </a></li>
+
+ <li><a href="/newassets/images/IT/Faculty-ClassAssignmentManual.pdf"
+     title="How to Create an Assignment" target="_blank">Create an Assignment for Student</a></li>
+
+      <!--  <li class="dropdown-header dh">Learning Management System (LMS)</li>
+         <li><a href="http://www.northsouth.edu/newassets/images/5-1409.canvas_items_Updated.pdf" title="">Canvas</a></li> -->
+         
+
+<li class="dropdown-header dh">Learning Management System (LMS)</li>
+         <li><a href="http://www.northsouth.edu/canvas/" title="">Canvas </a></li>
+   
+
+                            </li>  
+                        </ul>
+                    </li>
+                    <li class="col-lg-4">
+
+ <ul>
+
+ 
+
+ <li class="dropdown-header dh">Student: Guidelines (Step by Step)</li>
+  
+<li><a href="/newassets/images/IT/PasswordRecoveryProcess.pdf"
+     title="Reset Your Own Password for RDS" target="_blank">Students: Password Recovery Process for RDS</a></li>
+
+<li><a href="https://drive.google.com/file/d/0B8X_hvl8uyoIRF9Ud1RRdjNWNjg/view"
+     title="Online Course Registration Process" target="_blank">Students: Online Course Registration</a></li>
+
+ <li><a href="/newassets/images/IT/OnlineClassRoom-Students.pdf"
+     title="Guideline for Students OnlineClass" target="_blank">Students: Online ClassRoom</a></li>
+
+<li><a href="/newassets/images/IT/GooleAssignmentStudentPerspective.pdf"
+     title="Guideline for Students Submit Assignment" target="_blank">Students: How to submit an assignment</a></li>
+
+ <!--      <li><a href="https://www.youtube.com/watch?v=N9rWfgFVAEg"
+     title="Guideline for Students Submit Assignment" target="_blank">Students: How to submit an assignment (Video Tutorial) </a></li>  -->
+ 
+  <li><a href="http://www.northsouth.edu/assets/cv/RDS-NID-Update.pdf"
+     title="Guideline for Students OnlineClass" target="_blank">Students: How to Input NID Through RDS</a></li>
+
+  <li><a href="http://www.northsouth.edu/assets/cv/Degree_Analysis_Guideline%20(2).pdf"
+     title="Online Degree Analysis Process for Next Convocation" target="_blank">Students: Online Degree Analysis  </a></li>
+
+       <li><a href="/newassets/images/5-8822.EnrollmentProcess.pdf"
+     title="Online Enrollment Process" target="_blank">Applicants: Online Enrollment Process </a></li> 
+
+
+                     
+                           
+                        </ul>
+                    </li>
+                    <li class="col-lg-4"></li>
+                </ul>
+
+<!---  -->
+
+
+            </li>  <!-- -->
+
+
+
+        <!--    <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Alumni <span
+                    class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-lg-4">
+                        <ul>
+                            <li class="dropdown-header">Join the Alumni Network</li>
+                            
+                            <li><a href="https://rds3.northsouth.edu/" title="" target="_blank">Alumni Portal (RDS)</a></li>
+                             
+                             <li><a href="https://alumni.northsouth.edu/GradList" title=""target="_blank">All NSU Alumni</a></li>
+
+                             <li><a href="https://alumni.northsouth.edu/login" title="" target="_blank">Alumni Database Login</a></li>
+
+                            <li><a href="academic/sbe/sbealumni/" title="">SBE Alumni</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-4">
+</li>
+                    <li class="col-lg-4"></li>
+                </ul>
+
+            </li> -->
+
+           <li class=""><a href="https://alumni.northsouth.edu/landingPage" class="">Alumni</a></li>
+            <li class=""><a href="research-office/" class="">Research </a></li>
+            <li class="dropdown mega-dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Useful
+                Links<span class="caret"></span></a>
+                <ul class="dropdown-menu mega-dropdown-menu">
+                    <li class="col-lg-3" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">NSU Inquiry</li>
+                            <li><a href="resources/inquiry-feedback.html" title="">Inquiry & Feedback</a></li>
+                            <li><a href="resources/nsu-directory.html" title="">Administrative Directory</a></li>
+                            
+                            <li><a href="https://jobs.northsouth.edu/" title="" target="_blank"" title="">Jobs at NSU</a></li>
+                           
+                            <li><a href="resources/tender/" title="">Tender Notice</a></li>
+                            <li><a href="https://rds3.northsouth.edu/index.php/verification/verification" title="" target="_blank"" title="">Degree Verification</a></li>
+
+<li><a href="https://rds3.northsouth.edu/index.php/etender/auth"
+                                   title="">E-Tender</a></li>
+                        </ul>
+                    </li>
+                    <li class="col-lg-3" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">NSU Services</li>
+                            <li><a href="resources/nsuforms.html" title="">Services Request Forms</a></li>
+                            <li><a href="nsu-facilities/" title="">NSU Facilities</a></li>
+                            <li><a href="resources/nsu-student-clubs.html" title="">NSU Student Clubs</a></li>
+                            <!--<li><a href="#" title="">Conference at NSU</a></li> -->
+                      <!--<li><a href="resources/it-resource-center.html" title="">IT Resource Center</a></li>-->
+                          <li><a href="/newassets/images/nsu-photo/nsu-pabx-directory-7-april-2026-1.pdf" title="">PABX Directory</a></li>
+                           <li><a href="http://www.gmail.com">NSU Email Service</a></li>
+                           <li><a href="http://www.northsouth.edu/archive.html">NSU Archive</a></li>
+                            <li><a href="bank-list-for-tuition-fees.html" title="">Bank List for Tuition Fees</a></li> 
+
+                        </ul>
+                    </li>
+                    <li class="col-lg-3" style="border-right:1px dashed #105BC0">
+                        <ul>
+                            <li class="dropdown-header">Offices</li>
+                            <li><a href="http://institutions.northsouth.edu/oea/" title="">Office of the External Affairs</a></li>
+                            <li><a href="ogs.html">Office of the Graduate Studies</a></li>
+                           <!-- <li><a href="resources/ous-18022021.html">Office of the Undergraduate Studies</a></li> -->
+                            <li><a href="proctoroffice/">Proctor's Office</a></li>
+                            <li><a href="resources/fao.html">Financial Aid Office</a></li>
+                            <li><a href="osa/">Office of the Student Affairs</a></li>
+                            <li><a href="http://nsustartupsnext.org/" title="NSU Startups Next (NSUSN)">NSU Startups Next 
+                          (NSUSN) </a></li>
+                           
+                      <li><a href="registrars-office/">Registrar's Office</a></li> 
+                      <li><a href="controller-office/">Office of the Controller of Examinations</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="col-lg-3">
+                        <ul>
+                            <li class="dropdown-header">Policy, Procedures & Complaints</li>
+                          <li><a href="pshc/">Complaint Committee</a></li>
+                            
+<!--   <li><a href="newassets/files/WomensHarresment- ACT.pdf" title="">High Court Directives on Harassment</a></li> -->
+
+
+                        </ul>
+                    </li>
+
+
+
+<!-- <li class="col-lg-4">
+                        <ul>
+                            <li class="dropdown-header">Canvas</li>
+                          
+                         <li><a href="">Faculty: Guidelines</a></li>
+                         <li><a href="">Student: Guidelines</a></li>
+                            
+  <li><a href="newassets/files/WomensHarresment- ACT.pdf" title="">High Court Directives on Harassment</a></li> 
+
+
+                        </ul> 
+                    </li> -->
+
+
+
+
+
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="slogan-bar d-none d-lg-block" style="background: #1A265C;color: #fff;text-align: center;padding: 6px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="text-slider">
+                        <div id="elem0" class="toBeFaded">Center of Excellence in Higher Education </div>
+                        <div id="elem1" class="toBeFaded">The First Private University in Bangladesh</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-title full-color" style="display:block;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-title-heading">
+          <h2 class="title">MBA/EMBA Programs</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="department body-content">
+  <div class="container">
+    <div class="dept-head-block">
+      <div class="row">
+        <div class="col-md-8">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-1.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-2.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-3.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-4.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-5.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-6.png" class="d-block w-100" alt="..." />
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.northsouth.edu/newassets/images/mba/emba-img-7.png" class="d-block w-100" alt="..." />
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <section class="un-post-scroller dept">
+            <div class="section-inner-no-padding">
+              <div class="post-scroller-wrap">
+                <div class="post-scroller-carousel" data-next=".post-scroller-down" data-prev=".post-scroller-up">
+                  <h2>Notice</h2>
+                  <div class="post-scroller-carousel-inner">
+                    MBA & EMBA Result - Summer 2026
+
+
+                    <div class="view-all">
+                      <a href="dept-notices/mbaemba-programs/" target="_blank"> » View All Notices «</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12"><div class="row">
+<div class="col-md-3">
+<div class="sidebar research-sidebar">
+<ul class="nav nav-pills nav-stacked">
+<li><a class="collapsed" data-toggle="collapse" data-target="#overview">Introduction</a>
+<ul id="overview" class="nav nav-pills nav-stacked collapse">
+<li><a href="#one" data-toggle="pill">About Us</a></li>
+<li><a href="#two" data-toggle="pill">Director's Message</a></li>
+<!-- <li><a href="#three" data-toggle="pill">Business Community Engagement</a></li> -->
+<li><a href="#twentytwo" data-toggle="pill">Vision & Mission</a></li>
+</ul>
+</li>
+<li><a class="collapsed" data-toggle="collapse" data-target="#mba">MBA Program</a>
+<ul id="mba" class="nav nav-pills nav-stacked collapse">
+<li><a href="#five" data-toggle="pill">Overview</a></li>
+<li><a href="#six" data-toggle="pill">Curriculum</a></li>
+<li><a href="#seven" data-toggle="pill">Degree Requirements</a></li>
+<li><a href="#eight" data-toggle="pill">Financial Information</a></li>
+<li><a href="#nine" data-toggle="pill">Admission</a></li>
+<li><a href="#ten" data-toggle="pill">Core Faculty Members</a></li>
+</ul>
+</li>
+<li><a class="collapsed" data-toggle="collapse" data-target="#emba">EMBA Program</a>
+<ul id="emba" class="nav nav-pills nav-stacked collapse">
+<li><a href="#fourteen" data-toggle="pill">Overview of EMBA Program</a></li>
+<li><a href="#fifteen" data-toggle="pill">Admission</a></li>
+<li><a href="#sixteen" data-toggle="pill">Financial Information about EMBA Program</a></li>
+<li><a href="#seventeen" data-toggle="pill">Degree requirements</a></li>
+<li><a href="#eighteen" data-toggle="pill">Curriculum</a></li>
+<li><a href="#nineteen" data-toggle="pill">Core Faculty Members</a></li>
+<li><a href="#eleven" data-toggle="pill">Adjunct/Visiting Faculty Members</a></li>
+</ul>
+</li>
+<li><a href="#twenty" data-toggle="pill">Contact</a></li>
+<li><a href="#twentyone" data-toggle="pill">Recent Highlights</a></li>
+<li><a href="#three" data-toggle="pill">Business Community Engagement</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-9">
+<div class="tab-content">
+<div id="one" class="tab-pane ">
+<h5 class="no-margin">About Us</h5>
+<p style="margin-top: 12.0pt; text-align: justify;"><span style="font-size: 11.0pt; font-family: 'Arial',sans-serif;">The MBA and EMBA programs of the School of Business and Economics (SBE) aims at developing managers and leaders of the 21<sup>st</sup> century. Both the programs are flexible and career-oriented&nbsp; and designed to meet the needs of the professionals of the corporate world. </span><span style="font-family: Arial, sans-serif; font-size: 11pt;">The programs have been designed following the guidelines of Outcome Based Education. It is our pride that these programs were first in receiving the award of Accreditation Council for Business Schools and Programs (ACBSP) from the global accreditation body of business schools. Till today, the academic teams of the E/MBA programs are committed to a lifelong journey to develop business experts who deliver sustainable economic and social values.&nbsp;</span><span style="font-size: 11.0pt; font-family: 'Arial',sans-serif;">The E/MBA programs are open to all university graduates. However, in order to get admission in the programs, the applicant must have at least three years of continuous work exprience (after the completion of undergraduate degree) in a managerial position. Faculty members of the programs are educated and trained in North American or equivalent universities. Faculty members teaching at NSU MBA are all PhD qualified. Classes of the MBA program are held seven days a week (Sun-Sat), with 3-hour study time for each class. Weekdays classes are held in two slots, one starting at 3pm and the other at 7pm. For EMBA, classes are scheduled on only on Thursday, Friday and Saturday, so that the professionals can join the program. The MBA at NSU is a 60-credit program (20 courses of 3 credits each) with five components &ndash; foundation courses (27 credits), advanced courses (15 credits), integrative courses (3 credits), concentration courses (12 credits) and open electives (3 credits). EMBA on the other hand is a 50-credit program with components such as Foundation courses (15 credits), Functional Core Courses (23 credits) and major courses (12 credits). NSU MBA and EMBA offer major in Finance, Human Resource Management, Marketing, Management, Management Information Systems, and Supply Chain Management.</span></p>
+<p style="margin-top: 12.0pt; text-align: justify;">&nbsp;</p>
+<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p></div>
+<div id="two" class="tab-pane">
+<h5 class="no-margin">Director's Message</h5>
+<p><br><img style="display: block; margin-left: auto; margin-right: auto;" src="newassets/images/5-8671.Nazlee Siddiqui.jpg" width="189" height="236"><br>When asked why a student should choose NSU-MBA and EMBA, I always mention four reasons; our global recognition, highly qualified faculty members, wider network, and industry-oriented curriculum.</p>
+<p>We are accredited by ACBSP (Accreditation Council for Business Schools and Programs).&nbsp; This means our degree is highly acceptable both locally and internationally. This accreditation also signifies our high standards of teaching, state of the art facilities, and commitment to continuous enhancement of the quality of the programs.</p>
+<p>We have the best faculty members. I feel proud to inform that our entire faculty members in the MBA Program are PhD qualified. In EMBA Program, we have faculty members with vast industry experience which makes the program more practical and industry-focused.</p>
+<p>We facilitate networking. Currently we have 5958 alumni serving worldwide. We trust that our alumni can be the role models to our existing students and can help our students to start their careers in promising manners. Not only alumni, we have academic collaborations with number of top Business Schools in the world. We regularly invite corporate managers in academic seminars which not only establish a network between students and corporates but also help our students to realize the current practices of the industry. &nbsp;&nbsp;</p>
+<p>We contribute to the human development. Our students are working in the top positions and leading the sustainable businesses. Thanks to our distinguished faculty members who transformed them into human resources and leaders. We are continuously striving to enhance the quality of education in our programs through updating the course curriculum according to the global and industry benchmarks. Our faculty members use result-oriented teaching methods (such as, case studies and software applications) which help the students to develop those skills that are most demanding in the job market.</p>
+<p>Dear future leaders &ndash; if you want to make your EMBA/MBA Degree an asset of your life, I welcome you to join our wider network of distinguished faculty members, top corporate managers, and remarkable alumni. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><strong><a href="faculty-members/sbe/mgt/nazlee-siddiqui.html" target="_blank" rel="noopener">Dr. Nazlee Siddiqui</a></strong><br>Professor and Director<br>MBA and EMBA Programs<br><br><br></p></div>
+<div id="three" class="tab-pane">
+<h5 class="no-margin">Business Community Engagement</h5>
+<h5 class="container" style="text-align: justify;"><!-- Roundtable Video Section --></h5>
+<section class="mb-5">
+<h2 class="section-title">Roundtable Discussions</h2>
+<div class="row align-items-center">
+<div class="col-lg-7">
+<div class="video-container"><iframe src="https://www.youtube.com/embed/qZInhYRu61g?si=FTrtpzbRT6YPxghd" allowfullscreen="allowfullscreen"></iframe></div>
+</div>
+<div class="col-lg-5">
+<div class="video-caption">
+<p class="text-muted font-italic text-monospace lh-2">At a Summer E/MBA orientation, roundtable discussions were held between 200 students and about 50 industry leaders, NSU alumni, and business academics to showcase the practice of a 'lifelong learning journey'. The discussions highlighted how success in business requires continuous fostering of personal and professional growth by blending in-demand theoretical knowledge and pragmatic skills.</p>
+</div>
+</div>
+</div>
+</section>
+<h5 class="container" style="text-align: justify;"><!-- Guest Speaker Sessions --></h5>
+<section class="mb-5">
+<h2 class="section-title">Guest Speaker Sessions</h2>
+<p class="guest-speaker-title">Connecting students to contemporary business topics</p>
+<div class="row photo-gallery">
+<div class="col-md-6"><img class="img-fluid gallery-img" style="float: left;" src="newassets/images/mba/emba-gss-1.png" alt="Guest Speaker Session" width="662" height="440"></div>
+<div class="col-md-6" style="text-align: justify;">The Spring 2025 BUS535-Market Research students learnt about the value of market research and understanding your consumer in a session with Mr. Parvez Sarwar, Head of Consumer and Market Insight, Unilever Bangladesh. Mr. Parvez Sarwar, who is an alumnus of the EMBA program, had marked this session as important connection for lifelong learning. Prof. Nazlee Siddiqui has arranged this session, addressing the UN Sustainable Development Goal Agenda 4 (Quality Education).</div>
+<div class="col-md-6" style="text-align: justify;">&nbsp;</div>
+<div class="col-md-6" style="text-align: justify;"><img src="newassets/images/mba/dr.-roger.png" alt="Fall 2025 BUS690 students learnt about use of AI in strategic management of businesses in an online session with Dr. Roger Moser, Senior Lecturer, Department of Management, Innovation, Strategy and Entrepreneurship Research Centre, Macquarie University. Prof. Nazlee Siddiqui has arranged this session, addressing the UN Sustainable Development Goal Agenda 9 (Industry, Innovation and Infrastructure)." width="678" height="276"></div>
+<div class="col-md-6" style="text-align: justify;">Fall 2025 BUS690 students learnt about use of AI in strategic management of businesses in an online session with Dr. Roger Moser, Senior Lecturer, Department of Management, Innovation, Strategy and Entrepreneurship Research Centre, Macquarie University. Prof. Nazlee Siddiqui has arranged this session, addressing the UN Sustainable Development Goal Agenda 9 (Industry, Innovation and Infrastructure).</div>
+</div>
+</section>
+<h3 style="text-align: center;">&nbsp;</h3>
+<h3 style="text-align: center;"><span style="text-decoration: underline; font-size: 14pt;"><span style="font-family: arial, helvetica, sans-serif;"><strong>Industrial and Employment Relations Practices in Bangladesh's Apparel Sector: Lessons, Challenges, and the Way Forward</strong></span></span></h3>
+<section class="mb-5"></section>
+<section class="mb-5"></section>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="newassets/images/mba/mfc.jpg" alt="" width="553" height="414"></p>
+<p style="text-align: justify;">Associate Professor Dr Muhammad Faisol Chowdhury organised a seminar in his 'HRM610: Employment and Labour Laws in Bangladesh' class on 12 November 2025, where Mr Abedin M Nazimuddin Bhuian, Managing Director of Abedin Group of Industries, was present as the speaker. He delivered an insightful and eloquent talk on&nbsp;'Industrial and Employment Relations Practices in Bangladesh&rsquo;s Apparel Sector: Lessons, Challenges, and the Way Forward'. The seminar also aligned with SDGs 4, 8, 16, and 17.</p>
+<h3 class="section-title" style="text-align: center;">&nbsp;</h3>
+<h3 class="section-title" style="text-align: center;"><strong>HRM Meets Entrepreneurship: Building Future-Ready Leaders for Bangladesh&rsquo;s Industries</strong></h3>
+<p style="text-align: center;"><strong><img src="newassets/images/mba/ksm.jpg" alt="" width="634" height="400"></strong></p>
+<h5 style="text-align: justify;"><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 12pt;">The Fall 2025 BUS 601 students had the privilege to engage with the guest speaker, Mr. S. M. Shameem Iqbal- a distinguished industrialist and corporate leader in Bangladesh, possessing extensive experience in the banking, manufacturing, and fast-moving consumer goods (FMCG) sectors. &nbsp;Currently, Mr. Iqbal is serving as both the Chairman and Chief Executive Officer of Xecta Ltd. and F M Agro Ltd., the parent companies of Shukran, an emerging FMCG brand. This session had focused on the importance of fostering an entrepreneurial mindset that integrates ideal HRM practices. The topic of the session is aligned to the UN Sustainable Development Goals 8 and 9.</span></h5>
+<h2 class="section-title">Our Alumni Speak Highly of Us</h2>
+<div class="row"><!-- Testimonial 1 -->
+<div class="col-lg-6 mb-4">
+<div class="testimonial-card">
+<div class="testimonial-header">
+<h5 class="mb-0">Taskeen Ahmed</h5>
+<small>Vice Chairman, IFAD GROUP</small></div>
+<div class="testimonial-body">
+<p>"An MBA at North South University is more than just a degree - it's an investment in your future. It prepares you to lead with confidence, make impactful decisions and drive meaningful change in your organization and community. Back then I was grateful for my own experience at NSU's MBA program, and today I am honored to be a part of this program in welcoming the class to start their journey."</p>
+<div class="alumni-name">Taskeen Ahmed</div>
+<div class="alumni-position">Vice Chairman, IFAD GROUP | NSU Alumnus EMBA and MBA Program</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="col-lg-6 mb-4">
+<div class="testimonial-card">
+<div class="testimonial-header">
+<h5 class="mb-0">Hussain Elius</h5>
+<small>Co-founder, Pathao</small></div>
+<div class="testimonial-body">
+<p>"NSU MBA evening classes gave me scope to use the morning for my startup- Pathao, and the evening for learning theories. Those theories, whether it is finance marketing or management theories can guide you to develop the worldviews to negotiate the different tools in the changing world."</p>
+<div class="alumni-name">Hussain Elius</div>
+<div class="alumni-position">Co-founder Pathao | NSU Alumnus EMBA and MBA Program</div>
+</div>
+</div>
+</div>
+</div></div>
+<div id="four" class="tab-pane">
+<h5 class="no-margin"></h5>
+</div>
+<div id="five" class="tab-pane">
+<h5 class="no-margin">Overview</h5>
+<p>The MBA program aims at developing managers and leaders of the 21st century. Flexible and career-oriented,it is designed to meet the needs of professionals in the corporate world.&nbsp; The MBA program has been designed following the guidelines of the American Assembly of Collegiate Schools of Business (AACSB), the highest accreditation body of business schools in USA.</p>
+<p>The program is open to all university graduates preparing for major career advancements. NSU faculty members are educated and trained in North American or universities or their equivalent. Classes are held seven days a week (Sun-Sat), with 3-hour study time for each class. Weekdays classes are held in two slots, one starting at 3pm and the other at 7pm to accommodate the schedules of full-time professionals.</p>
+<p>The academic programs are offered throughout the year in three semester: Spring, Summer and Fall. Each term spans 13 weeks.&nbsp; The Spring term begins in January, Summer in May, and Fall in September.</p>
+<p>Students can choose to do major in Management, Marketing, Finance, Human Resource Management, Management Information Systems (MIS) and Supply Chain Management (SCM).</p>
+<p>NSU has agreements for academic cooperation and exchange programs with many foreign universities.</p></div>
+<div id="six" class="tab-pane">
+<h5 class="no-margin">Curriculum</h5>
+<p><a href="newassets/images/mba-degree-flow-chart-revised.pdf"><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="newassets/images/mba-degree-flow-chart-revised-page-0001.jpg" alt="" width="1650" height="1275"></strong></a></p>
+<h3><a href="newassets/images/mba/obe-curriculum-mba.pdf" target="_blank" rel="noopener"><strong>Curriculum &amp; Course Description...</strong></a></h3>
+<p>&nbsp;</p>
+<p><strong>Foundation Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (27 Cr)</strong></p>
+<ul>
+<li>BUS 500 Communication Skills for Managers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Non Cr</li>
+<li>BUS 501 Business Math</li>
+<li>BUS 505 Accounting Principles</li>
+<li>BUS 511 Business Statistics</li>
+<li>BUS 516 Computer Information Systems</li>
+<li>BUS 518 Business Law and Ethics</li>
+<li>BUS 520 Management and Organizational Behavior</li>
+<li>BUS 525 Managerial Economics</li>
+<li>BUS 530 Economic Conditions Analysis</li>
+<li>BUS 535 Business Research Methods</li>
+</ul>
+<p><strong>Advanced Courses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (15 Cr)</strong></p>
+<ul>
+<li>BUS 601 Human Resource Management</li>
+<li>BUS 620 Marketing Management</li>
+<li>BUS 635 Managerial Finance</li>
+<li>BUS 650 Operations Management</li>
+<li>BUS 685 International Business</li>
+</ul>
+<p><strong>Integrative Course&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3 Cr)</strong></p>
+<ul>
+<li>BUS 690 Strategic Management</li>
+</ul>
+<p><strong>Major Courses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (12 Cr)</strong><br>(Any 4 from a major)</p>
+<p><strong>FINANCE </strong></p>
+<ul>
+<li>FIN 635 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Financial Analysis and Control</li>
+<li>FIN 637 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Investment Theory</li>
+<li>FIN 639&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Corporate Finance</li>
+<li>FIN 640 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Real Estate Finance</li>
+<li>FIN 642 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Financial Markets and Institutions</li>
+<li>FIN 643 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Capital Investment Decisions</li>
+<li>FIN 644 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Commercial Bank Management</li>
+<li>FIN 645 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; International Financial Management</li>
+<li>FIN 646 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Theory of Finance</li>
+<li>FIN 647 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Financial Derivatives</li>
+<li>FIN 649 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Special Topics in Finance</li>
+<li>FIN 650 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Project Appraisal</li>
+<li>FIN 680 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case Studies in Finance</li>
+</ul>
+<p>&nbsp;<strong>MANAGEMENT</strong></p>
+<ul>
+<li>MGT 601 Management Thought</li>
+<li>MGT 602 Management Science</li>
+<li>MGT 604 Organizational Development &amp; Change</li>
+<li>MGT 605 Industrial Relations (rename in 043)</li>
+<li>MGT 607 Entrepreneurship</li>
+<li>MGT 610 Management of Innovation and Technology</li>
+<li>MGT 619 Services Management</li>
+<li>MGT 656 Leadership Theory and Practice</li>
+<li>MGT 660 Comparative Management</li>
+<li>MGT 670 Strategic Planning</li>
+<li>MGT 675 Total Quality Management (TQM)</li>
+<li>MGT 680 Supply Chain Management&nbsp;</li>
+<li>MGT 682 Environmental Management</li>
+<li>MGT 690 Seminar on Advanced Management&nbsp; &nbsp;&nbsp;</li>
+</ul>
+<p><strong>MARKETING</strong></p>
+<ul>
+<li>MKT 621 Buyer Behavior</li>
+<li>MKT 623 Promotional Management</li>
+<li>MKT 624 Brand Management</li>
+<li>MKT 625 Distribution Management</li>
+<li>MKT 626 Retail Management and Merchandising</li>
+<li>MKT 627 Services Marketing</li>
+<li>MKT 628 Digital Marketing</li>
+<li>MKT 629 Product Planning and Development</li>
+<li>MKT 630 Business-to-Business Marketing</li>
+<li>MKT 631 Marketing Research</li>
+<li>MKT 633 Global Marketing</li>
+<li>MKT 634 Marketing Strategy</li>
+<li>MKT 635 Special topics in Marketing</li>
+<li>MKT 636 Marketing Analytics</li>
+</ul>
+<p><strong>HUMAN RESOURCE MANAGEMENT</strong></p>
+<ul>
+<li>HRM 602 Human Resource Planning and Staffing</li>
+<li>HRM 603 Training and Development</li>
+<li>HRM 604 Performance Appraisal and Compensation Systems</li>
+<li>HRM 605 Industrial Relations</li>
+<li>HRM 610 Employment and Labor Laws in Bangladesh</li>
+<li>HRM 631 Managerial Skills Development</li>
+<li>HRM 645 Interpersonal Relations and Group Dynamics</li>
+<li>HRM 650 Managing High Performance</li>
+<li>HRM 660 Strategic Human Resource Management</li>
+<li>HRM 675 Advanced Wage and Employment Theory</li>
+<li>HRM 680 Comparative Perspectives on HRM</li>
+<li>HRM 690 Special Topics in Human Resource Management</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>MANAGEMENT INFORMATION SYSTEMS (MIS)</strong></p>
+<ul>
+<li>MIS 651 System Design and Development</li>
+<li>MIS 652 Management Information Systems</li>
+<li>MIS 653 E-Business Strategies</li>
+<li>MIS 654 Database Management</li>
+<li>MIS 655 E-Government and Information Ethics</li>
+<li>MIS 657 Business Analytics and Data Science</li>
+<li>MIS 661 Decision Support and Expert Systems</li>
+<li>MIS 662 Advanced Database Management</li>
+<li>MIS 663 IT Entrepreneurship</li>
+<li>MIS 664 Seminar on Advanced MIS</li>
+<li>MIS 665 Information Security and Policies</li>
+<li>MIS 666 IT Project Management</li>
+<li>MIS 667 Networking for Corporate Management</li>
+<li>MIS 668 Knowledge Management in Business Organizations<strong>&nbsp;</strong></li>
+</ul>
+<p><strong>SUPPLY CHAIN MANAGEMENT (SCM)</strong></p>
+<ul>
+<li>SCM 601/MGT 680 Supply Chain Management&nbsp; <strong>(mandatory)</strong></li>
+<li>SCM 602 Managing Global Supply Chain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 603 Procurement and Sourcing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 604 Supply Chain Management Strategies&nbsp;&nbsp;</li>
+<li>SCM 605 Supply Chain Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 606 Distribution Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 607 Demand Planning and Inventory Management</li>
+<li>SCM 608 Green Supply Chain Management</li>
+</ul>
+<p><strong>Open Electives&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (3 Cr)</strong></p>
+<ul>
+<li>Any courses from the above MBA major areas.</li>
+</ul></div>
+<div id="seven" class="tab-pane">
+<h5 class="no-margin">Degree Requirements</h5>
+<p>A student must complete the required number of credits with a minimum CGPA of 2.75/4.00 to earn the MBA degree. The minimum CGPA requirement has been shifted from 2.50 to 2.75 according to the decision of the 100th Academic Council Meeting held on 27 April 2026. If in any semester the CGPA drops below 2.75 the student is put on academic probation. A student will be dismissed after being on probation for two consecutive semesters.</p>
+<p>Students who have completed similar courses at their undergraduate or graduate levels from recognized institutions are eligible for waiver of a maximum of 12 credit hours from the foundation level courses.&nbsp; A waiver decision will be made upon a student&rsquo;s admission to the program.&nbsp; A student may apply for a maximum of 12 credit hours to be transferred to NSU if he/she has completed similar graduate level courses at other recognized institutions. Students may also be eligible for course waiver up to 6 credit hours if they have two years&rsquo; uninterrupted full-time work experience. At least 36 credit hours must be completed at NSU for the degree (residency requirement). The decision of the university is final on the issue of waiver or transfer of credit.</p></div>
+<div id="eight" class="tab-pane">
+<h5 class="no-margin">Financial Information</h5>
+<p>Total cost of the program ranges from Taka 3,15,000 to Taka 4,92,000 (calculation based on study load of 4 courses per semester), depending on the standing of the student at the time of admission.&nbsp; All fees are subject to change.&nbsp; Please check with the MBA Program Office for the most recent fee structure.</p>
+<p><strong><u>Cost/Fee Structure &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Amount</u></strong></p>
+<p>Tuition Fee per credit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 7,000*3=22,500</p>
+<p>Student Activity Fee per semester&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 3,000</p>
+<p>Computer Lab Fee per semester&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 2,000</p>
+<p><span style="text-decoration: underline;">Library Fee per semester&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 1,000</span></p>
+<p><em><span style="text-decoration: underline;">*effective from Spring 2026</span></em></p>
+<p>Please note that all students must pay a non-refundable, one time only admission fee of Tk. 50,000.</p>
+<p>North South University recognizes the need for supporting meritorious and needy students.&nbsp; The support is provided through SCHOLARSHIP/FINANCIAL AID.&nbsp; Continuation of financial aid or assistantship is subject to satisfactory academic performance. Please check with the MBA Programs Office for details.</p></div>
+<div id="nine" class="tab-pane">
+<h5 class="no-margin">Admission</h5>
+<div style="padding-left: 240px;"><a class="btn btn-md btn-success admit-btn" href="http://apply.northsouth.edu:8080/admissionWeb/login.view">Apply Now</a></div>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p>New students are admitted to the program THREE times a year (in Spring, Summer and Fall).&nbsp; Applications must be submitted within the deadline announced for the semester of intake.&nbsp; All admission queries should be directed to the MBA Program Office, School of Business and Economics.&nbsp; To be eligible to apply for admission a candidate will require</p>
+<ul>
+<li>A minimum of 15 years of schooling prior to MBA.</li>
+<li>A bachelor&rsquo;s degree in any discipline. (Please note that two-year BA/B.Sc./B.Com degrees do not fulfill the 15-year schooling requirement; a master&rsquo;s degree will be required in such cases.)</li>
+<li>At least second division/class with 45% or above marks in all public examinations, or a CGPA of 2.75/ 4.00 point scale in applicable cases.</li>
+</ul>
+<p>The final decision on admission is taken on the basis of the following.</p>
+<ul>
+<li>Past academic performance (at high school, college, and university levels).</li>
+<li>Scores of the admission test administered by NSU.</li>
+<li><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Arial','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;">The NSU administered admission test may be waived if an applicant presents a suitable and valid score for GMAT and GRE. Please contact MBA info at <a href="mailto:mbainfo@northsouth.edu">mbainfo@northsouth.edu</a> if you would like to consult for this option</span>.</li>
+<li>Waiver of written test for candidates with undergraduate GPA of 3.0 or above from NSU.</li>
+<li>Interview with the Admission Committee.</li>
+<li>Work experience in managerial positions.</li>
+</ul>
+<p>The MBA admission test at NSU is very similar to GMAT in structure. There are five sections in the test: Reading Comprehension, English Grammar, Quantitative Aptitude, Data Sufficiency and Essay writing.&nbsp; The test takes about three hours to complete.&nbsp;</p>
+<p>Application packages can be found online at <strong>http://apply.northsouth.edu.</strong> Students can apply online by filling out the required forms and paying Taka 1,500 through bKash, Rocket, VISA, Master card, DBBL Nexus, etc. Only completed applications will be processed. A complete application includes:</p>
+<ul>
+<li>A Graduate application form, completed and signed</li>
+<li>Candidate&rsquo;s two passport-sized signed photographs and National ID.</li>
+<li>Parent&rsquo;s PP Photographs and photocopy of National ID.</li>
+<li>One set of photocopies of all previous certificates and transcripts (mark sheets), notarized or attested. Incomplete or improper attestation will deem the application void.</li>
+<li>One set of appointment letter(s) and experience certificate(s), if any (attested).</li>
+<li>Statement of Purpose of 350 words.</li>
+</ul>
+<p>INTERNATIONAL STUDENTS</p>
+<p>North South University welcomes international students. Special consideration is given to the students from SAARC countries and South and Southeast Asia.&nbsp; Prospective students are advised to contact the Director, MBA Programs, by email at mbainfo@northsouth.edu</p>
+<p>International students are advised to process their application at least six months prior to the commencement of the program.&nbsp; Students should ask the Educational Testing Service send their GMAT score directly to the Director, MBA Program. The code number of North South University is 2505. Foreign nationals currently living in Bangladesh may take the NSU admission test in lieu of GMAT. All international students must provide a financial solvency certificate from a bank.&nbsp; The document must mention that the applicant or the sponsor has the ability to bear the educational and related expenses of the student during the period of study at North South University.&nbsp; The applicant must also hold valid visa to study at NSU. Responsibility of getting a visa from a Bangladesh Consulate lies with the student. NSU does not provide accommodation, housing or dormitory facility.</p>
+<p><strong><strong>&nbsp;</strong></strong></p>
+<p>&nbsp;</p></div>
+<div id="ten" class="tab-pane">
+<h5 class="no-margin">Core Faculty Members</h5>
+<h4>(A-Z)</h4>
+<h4>Dr. Ziaul Haq Adnan</h4>
+<p>Ph.D. (The University of North <a href="http://www.northsouth.edu/faculty-members/sbe/mgt/ziaul-haq-adnan.html">Carolina</a> at Charlotte, USA)</p>
+<p>Dr. Sharif Nurul Ahkam</p>
+<h4>DBA (Kent State University, USA)</h4>
+<h4>Dr. Jashim Uddin Ahmed</h4>
+<p>Ph.D. (Manchester University, UK)</p>
+<h4><a href="faculty-members/sbe/economics/dr.-rafayal-ahmed-rfah.html">Dr. Rafayal Ahmed </a></h4>
+<h4>Ph.D., Northwestern University, USA</h4>
+<p>Dr. Alima Aktar</p>
+<p>Ph.D (University of Utara Malaysia, UUM)</p>
+<p>Dr. Md. Shahedul Alam</p>
+<p>Ph.D.&nbsp; (University of Waterloo, Canada)</p>
+<p>Dr. Sakib Bin Amin</p>
+<p>Ph.D. (Durham University, UK)</p>
+<p><a href="faculty-members/sbe/marketing-ib/md-nekmahmud-argon.html">Dr. Nekmahmud Argon </a></p>
+<p>Ph.D. (Hungarian University of Agriculture and Life Sciences, Budapest)</p>
+<p>Dr. M. Hafizur Rahman Arman</p>
+<p>Ph.D. (Purdue University, USA)</p>
+<p>Dr. Samim Al Azad</p>
+<p>Ph.D. (Seoul National University)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/dr.-abdul-hannan-chowdhury.html">Dr. Abdul Hannan Chowdhury</a></p>
+<p>Vice Chancellor, NSU</p>
+<p>Ph.D. (Northeastern University, USA)</p>
+<p>Dr. Tamgid Ahmed Chowdhury<br>Ph.D. (Macquarie University, Australia)</p>
+<p>Dr. Mainul Islam Chowdhury</p>
+<p>Ph.D. Northern&nbsp; Illinois University</p>
+<p><a href="faculty-members/sbe/mgt/muhammad-faisol-chowdhury-mfc.html">Dr. Muhammad Faisol Chowdhury </a></p>
+<p>Ph.D. (University of Glasgow, UK)</p>
+<p>Dr. Syed Mortaza Asif Ehsan</p>
+<p>Ph.D. (University of Virginia Tech)</p>
+<p><a href="faculty-members/sbe/acc-fin/mohammad-islam-biswas.html">Dr. Mohammad Islam Biswas</a></p>
+<p>Ph.D. (Xiamen University, China)</p>
+<p>Dr. Fahim Faisal</p>
+<p>Ph.D, (Queensland University of Technology, Australia)</p>
+<p>Dr. Gour Gobinda Goswami<br>Ph.D. (University of Wisconsin, USA)</p>
+<p>Dr. Ummaha Tul Hazra</p>
+<p>Ph.D.&nbsp; (University of Cape Town, South Africa)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/economics/dr.-samiul-haque.html">Dr. Samiul Haque</a></p>
+<h4>Ph.D. (Purdue University, USA)</h4>
+<p>Dr. M. Ismail Hossain <br>Ph.D. (University of Toronto, Canada)</p>
+<h4><a href="faculty-members/sbe/economics/dr.-md.-javed-hossain.html">Dr. Javed Hossain </a></h4>
+<h4>Ph.D., Iowa State University , USA</h4>
+<h4><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/s.-s.-m.-sadrul-huda.html">Dr. S. S. M. Sadrul Huda </a></h4>
+<p>Ph.D. (Asia-E-University, Malaysia)</p>
+<p><a href="faculty-members/sbe/marketing-ib/md.-tamhid-ul-islam.html">Dr. Md. Tamhid Ul Islam</a></p>
+<p>Ph.D. (Aston University, UK)</p>
+<p><a href="faculty-members/sbe/acc-fin/dr.-farhana-islam.html">Dr. Farhana Islam [FI]</a></p>
+<p>Ph.D., University of Newcastle, Australia</p>
+<p><a href="faculty-members/sbe/marketing-ib/dr.-mehree-iqbal-mei.html">Dr. Mehree Iqbal </a></p>
+<p>Ph.D. (Curtin University, Australia)</p>
+<p>Dr. Zulkarin Jahangir</p>
+<p>Ph.D. (University of London)</p>
+<p>Dr. Md. Nurul Kabir</p>
+<p>Ph.D. (Griffith University, Australia)</p>
+<p>Dr. AKM Waresul Karim</p>
+<p>Dean, School of Business and Economics</p>
+<p>Ph.D. (University of Leeds, UK)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/atikur-rahman-khan.html">Dr. Atikur Rahman Khan </a></p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><a href="faculty-members/sbe/economics/md.-syeed-uz-zaman-khan.html">Dr. Md. Syeed Uz Zaman Khan </a></p>
+<p>Ph.D., University of Manitoba, Canada</p>
+<p>Dr. Abu Nahian Faisal Khan</p>
+<p>Ph.D. (University of New Orleans,New&nbsp; Orlens,LA)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/acc-fin/mr.-tanvir-nabi-khan.html">Dr. Tanvir Nabi Khan</a></p>
+<p>Ph.D. (The University of Nottingham, UK)</p>
+<p><a href="faculty-members/sbe/economics/dr.-saima-khan-sakn.html">Dr. Saima Khan </a></p>
+<p>Ph.D., National University of Singapore</p>
+<p><a href="faculty-members/sbe/marketing-ib/shamim-ahmed-khan.html">Dr. Shamim Ahmed Khan </a></p>
+<p>Ph.D., Monash University, Malaysia</p>
+<p><a href="faculty-members/sbe/marketing-ib/dr.-tareq-mahbub.html">Dr. Tareq Mahbub </a></p>
+<p>Ph.D.(Asian Institute of Technology (AIT)</p>
+<p>Dr. Khandaker Md.Nahin Mamun</p>
+<p>Ph.D. (University of&nbsp; Strathclyde, Glasgow)</p>
+<p>Dr. M. Khasro Miah<br>Ph.D. (Nagoya University, Japan)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/acc-fin/dr.-fj-mohaimen-fjm.html">Dr. FJ Mohaimen </a></p>
+<p>Ph.D. (Victoria University of Wellington, New Zealand)</p>
+<p>Dr. Farzana Nahid</p>
+<p>Ph.D. (University&nbsp; Of Malaya, Kuala Lumpur, Malaysia)</p>
+<p>Dr. Kanti Ananta Nuzhat</p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><a href="faculty-members/sbe/economics/tapas-kumar-paul.html">Dr. Tapas Kumar Paul [TPA]</a></p>
+<p>Ph.D., University of Missouri, Columbia, USA</p>
+<p>Dr. Asad Karim Khan Priyo</p>
+<p>Ph.D. (University of Toronto, Canada)</p>
+<p>Dr. Md. Arifur Rahman</p>
+<p>Ph.D. (University of Western, Sydney)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/dr.-mehe-z.-rahman.html">Dr. Mehe Z. Rahman </a></p>
+<p>Ph.D. (National University of Malaysia)</p>
+<p>Dr. A.F.M. Ataur Rahman<br>Ph.D. (American University, Washington DC, USA)</p>
+<p>Dr. A.K.M. Atiqur Rahman<br>Ph.D. (University of Houston, USA)</p>
+<p>Dr. Mustafa Abdur Rahman<br>Ph.D. (University of Western Sydney, Australia)</p>
+<p>Dr. Muhammad Sabbir Rahman</p>
+<p>Ph.D. (International Islamic University, Malaysia)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/sungida-rashid.html">Dr. Sungida Rashid </a></p>
+<p>Ph.D. (Southern Illinois University, USA)</p>
+<p>Dr. Mahmud A. Shareef<br>Ph.D. (Carleton University, Canada)</p>
+<p><a href="faculty-members/sbe/mgt/nazlee-siddiqui.html">Dr. Nazlee Siddiqui </a></p>
+<p>Director, MBA and EMBA Programs</p>
+<p>Ph.D. (Western Sydney University, Australia)</p>
+<p>Dr. Md. Shamim Talukder</p>
+<p>Ph.D. (Huazhong University of Science and Technology, China)</p>
+<p>Dr. Ahmed Tazmeen</p>
+<p>Ph.D. (University of Manitoba, Canada)</p>
+<p>Dr. Zerin Tasnim</p>
+<p>Ph.D. (University Putra Malaysia)</p>
+<p>Dr. Ahmed Sadek Yousuf</p>
+<p>Ph.D. (University of Arkansas, USA)</p>
+<p>Dr. Muslima Zahan</p>
+<p>Ph.D. (University of Turin, Italy)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>&nbsp;</h4>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>&nbsp;</h4>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+<div id="eleven" class="tab-pane">
+<h5 class="no-margin">Adjunct/Visiting Faculty Members</h5>
+<h4>(A-Z)</h4>
+<h4><br><strong>Dr. Kamal Uddin Ahmed</strong></h4>
+<p>Ph.D. (Victoria University of Wellington, NZ)</p>
+<p><strong>Major Gen. Monirul Islam Akhand NDC, psc (retd)</strong></p>
+<p>MBA (University of South Florida, USA)</p>
+<p><strong>Dr. Kh. Mezbahduddin Ahmed</strong></p>
+<p>Ph.D. (Athens University, Athens, Greece)</p>
+<p><strong>Dr. Ireen Akhter</strong></p>
+<p>Ph.D. (IBA, University of Dhaka)</p>
+<p><strong>Dr. Sarkar Ali Akkas</strong></p>
+<p>Ph.D. (University of Wollongong, Australia)</p>
+<p><strong>Dr. Nasrin Akter</strong></p>
+<p>Ph.D. (RMIT University, Australia)</p>
+<p><strong>Dr. Md. Razib Alam</strong></p>
+<p>Ph.D. (University of Waterloo, Canada)</p>
+<p><strong>Dr. Amin Masud Ali</strong></p>
+<p>Ph.D. (University of Manchester, UK)</p>
+<p><strong>Dr. Mahmudul Anam</strong></p>
+<p>Ph.D. (Carleton University, Ontario)</p>
+<p><strong>Dr. Abdullahil Azeem</strong></p>
+<p>Ph.D. (The University of Western Ontario, Canada)</p>
+<p><strong>Dr. Zaid Bakht</strong></p>
+<p>Ph.D.&nbsp; (Cornell University, USA)</p>
+<p><strong>Dr. Prashanta Kumar Banerjee</strong></p>
+<p>Ph.D. (Panjab University, India)</p>
+<p><strong>Dr. Mohammad Nazmuzzaman Bhuian</strong></p>
+<p>Ph.D. (University of London, UK)</p>
+<p><strong>Dr. Mohammad Monzur Morshed Bhuiyan</strong></p>
+<p>Ph.D. (University of Southern Queensland, Australia)</p>
+<p><strong>Dr. Mahboob Uddin Chowdhury</strong></p>
+<p>Ph.D. (Nagoya University, Japan)</p>
+<p><strong>Dr. Kanchan Das</strong></p>
+<p>Ph.D. (University of Windsor, ON, Canada)</p>
+<p><strong>Dr. Chowdhury Saima Ferdous</strong></p>
+<p>Ph.D. (University of Birmingham, UK)</p>
+<p><strong>Dr. Osman Gani</strong></p>
+<p>Ph.D. (Meiji University, Japan)</p>
+<p><strong>Dr. Md. Hasanuzzaman</strong></p>
+<p>Ph.D. (National Institute of Informatics (NII),&nbsp; Japan)</p>
+<p><strong>Dr. Mohammad Monirul Hasan</strong></p>
+<p>Ph.D. (University of Bonn, Germany)</p>
+<p><strong>Dr. M. Ahsan Akhtar Hasin</strong></p>
+<p>Ph.D. (Asian Institute of Technology, Thailand)</p>
+<p><strong>Dr. Ahsan Habib</strong></p>
+<p>Ph.D. (Huazhong University of Science and Technology, China)<strong> </strong></p>
+<p><strong>Dr. Md. Rakibul Haque</strong></p>
+<p>Ph.D. (Huazhon University of Science and Technology, China)</p>
+<p><strong>Dr. H. M. Mosarof Hossain</strong></p>
+<p>Ph.D. (University of Dhaka)</p>
+<p><strong>Dr. Md. Motaher Hossain</strong></p>
+<p>Ph.D. (University of Helsinki, Finland</p>
+<p><strong>Dr. Muhammad&nbsp; Ismail Hossain</strong></p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><strong>Dr. Nazmul Hossain</strong></p>
+<p>Ph.D. (Kyushu University, Japan)</p>
+<p><strong>Dr. M. Mosharref Hossain</strong></p>
+<p>Ph.D. (University Utara Malaysia, Malaysia)</p>
+<p><strong>Dr. Sheikh Mohammed Rafiul Huque</strong></p>
+<p>Ph.D. (Yokohama National University, Japan)</p>
+<p><strong>Dr. Gazi Muhammad Hasan Jamil</strong></p>
+<p>Ph.D. (Concordia University, Canada)</p>
+<p><strong>Dr. Monwarul Islam </strong></p>
+<p>Ph.D. (Okayma University, Japan)</p>
+<p><strong>Dr. Md. Shariful Alam Khandakar</strong></p>
+<p>Ph.D. (UUM, Malaysia)</p>
+<p><strong>Dr. Ziaur Rahman</strong></p>
+<p>Ph.D. (International Islamic University, Malaysia)</p>
+<p><strong>Dr. Kais Zaman</strong></p>
+<p>Ph.D. (Vanderbilt University, USA)</p>
+<p><strong>Dr. Mohammad Thoufiqul Islam</strong></p>
+<p>Ph.D. ( Ritsumeikan University, Japan)</p>
+<p><strong>Dr. K.M. Zahidul Islam</strong></p>
+<p>Ph.D.&nbsp; (University Helsinki, Finland)</p>
+<p><strong>Dr. Abul Khayer</strong></p>
+<p>Ph.D. (Huazhong University, China)</p>
+<p><strong>Dr. Mubina Khondkar</strong></p>
+<p>Ph.D. (University of Manchester, UK)</p>
+<p><strong>Dr. Nazmul Amin Majumdar</strong></p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><strong>Dr. A.K.M. Masud</strong></p>
+<p>Ph.D. (Mie University, Japan)</p>
+<p><strong>Dr. M. Rafiqul Matin</strong></p>
+<p>Ph.D. (University of Dhaka)</p>
+<p><strong>Dr. Mohammed Moslehuddin </strong></p>
+<p>Ph.D. (The Catholic University of Leuven, Belgium)</p>
+<p><strong>Dr. Abdul Moyeen</strong></p>
+<h4>Ph.D. (University of Stirling, UK)</h4>
+<p><strong>Dr. Abu Reza M. Muzareba</strong></p>
+<p>Ph.D. (University of Sheffield, UK)</p>
+<p><strong>Dr. Anamul Haque Sajib</strong></p>
+<p>Ph.D. (University of Nothingham, UK)</p>
+<p><strong>Dr. M. Masud Rahman</strong></p>
+<p>Ph.D. (Aligarh Muslim University, India)</p>
+<p><strong>Dr. Md. Mizanur Rahman</strong></p>
+<p>Ph.D. (University of Dhaka)</p>
+<p><strong>Dr. Md. Baktiar Rana</strong></p>
+<p>Ph.D. (Yokohama National University, Japan)</p>
+<p><strong>Dr. Nadia Newaz Rimi</strong></p>
+<p>Ph.D. (University Sains Malaysia, Malaysia)</p>
+<p><strong>Dr. Mohammad Rabiul Basher Rubel</strong></p>
+<p>Ph.D. (University Sains Malaysia, Malaysia)</p>
+<p><strong>Dr. Abdus Sattar</strong></p>
+<p>Ph.D. (Kiev Institute of National Economy, Kiev, USSR)</p>
+<p><strong>Dr. Ferdous Sarwar</strong></p>
+<p>Ph.D. (North Dakota State University, USA)</p>
+<p><strong>Dr. A. K. Fazlul H. Shah</strong></p>
+<p>Ph.D. (Northeastern University, USA)</p>
+<p><strong>Dr. Muhammad Saifuddin </strong></p>
+<p>Ph.D. (University of Technology Sydney, Australia)</p>
+<p><strong>Dr. Md. Samiullah</strong></p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><strong>Dr. Abdus Sattar</strong></p>
+<p>Ph.D. (Kiev Institute of National Economy, USSR)</p>
+<p><strong>Dr. Mohammad Tareq</strong></p>
+<p>Ph.D. (RMIT University, Melbourne)</p>
+<p><strong>Dr. Md. Azad&nbsp; Uddin</strong></p>
+<p>Ph.D. (Hiroshima University, Japan)</p>
+<p><strong>Dr. Muhammad Shariat Ullah</strong></p>
+<p>Ph.D. ( Ritsumeikan University, Japan)</p>
+<p><strong>Dr. Shima Zaman</strong></p>
+<p>Ph.D. (Jacquarie University, Australia)</p>
+<p><strong>Dr. Moniruzzama, FCA,ACMA, AFHEA</strong></p>
+<p>Ph.D. (University of Essex, UK)</p>
+<p><strong>Dr. Nasir Uddin Ahmed</strong></p>
+<p>Ph.D. (University of Sydney, Australia)</p>
+<p><strong>Dr. Mansura Akter</strong></p>
+<p>Ph.D. (University of Dhaka)</p>
+<p><strong>Mr. K.M. Jamshed uz Zaman</strong></p>
+<p>M.A (Yale University, USA)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+<div id="twelve" class="tab-pane">
+<h5 class="no-margin">Contact</h5>
+<p><strong>MBA Programs Office</strong></p>
+<p>Room 631, 6<sup>th</sup> Floor, North Academic Building</p>
+<p>15 B Bashundhara, Dhaka 1229</p>
+<p>Phone: +880 2 5566-8200 ext1760/1765/1764/1763</p>
+<p>Email: mbainfo@northsouth.edu</p>
+<p>&nbsp;</p>
+<p><strong>People</strong></p>
+<p>Dr. Nazlee Siddiqui, Director</p>
+<p>Md. Mahbubul Alam, Deputy Director</p>
+<p><strong>Supports</strong></p>
+<p>Mr. Shahedul Haq Khan Majlish&mdash;Extension 1764</p>
+<p>Mr. Jawhar Lal Dhar &ndash; Extension 1760</p>
+<p>Ms. Nahida Arafat &ndash; Extension 6309</p>
+<p>Mr. Ahmed Imran &ndash; Extension 6307</p></div>
+<div id="thirteen" class="tab-pane">
+<h5 class="no-margin"></h5>
+</div>
+<div id="fourteen" class="tab-pane">
+<h5 class="no-margin">Overview of EMBA Program</h5>
+<p>North South University (NSU), the premier private university in Bangladesh was established by the NSU Foundation with the initiative of a group of philanthropists, industrialists, bureaucrats, and academics. The government of Bangladesh approved the establishment of North South University in 1992 under Private University Act (PUA) 1992. The university follows American system-semesters, credit hours, letter grades, one examiner system, etc. Its curriculum when first introduced, were reviewed by relevant departments of University of Illinois, Urbana-Champaign, and University of California at Berkeley, USA and duly approved by UGC, Bangladesh. Academic curriculum of the programs are continually updated and adapted to meet the needs of the corporate arena. The EMBA curriculum recognizes and incorporates emerging trends, concepts, cases, and issues of globalization.</p>
+<p>The NSU School of Business and Economics (SBE) created history by becoming the first Business School in Bangladesh to receive American accreditation.&nbsp; The SBE received accreditation from the Accreditation Council for Business Schools and Programs (ACBSP), USA.&nbsp; Accreditation from ACBSP validates the quality of the education the SBE provides.</p>
+<p>The EMBA program of the School of Business and Economics, North South University aims at developing managers and leaders of the 21<sup>st</sup> century. It is flexible, career oriented, and designed to meet the needs of the professionals in various fields, viz., Business, Engineering, Social science, Medicine, and so on.&nbsp;</p>
+<p>The program can be completed within three to four semesters (about 1 &ndash;1&frac12; years). Students who have completed relevant coursework at their undergraduate or graduate levels may apply for waiver up to 15 credit hours (or five courses). If a student can take the full advantage of course waiver, he/she can complete the EMBA Program within three semesters.</p>
+<p>Faculty members teaching in the EMBA Program either have PhD from North American or equivalent universities or top-level corporate executives with long industry experiences.</p>
+<p>Classes in the EMBA Program are scheduled from 7:00 PM to 10:30 PM on Thursday; 9:00 AM to 12:30 PM and 7:00 PM to 10:30 PM on Friday; and 3:00 PM to 6:30 PM and 7:00 PM to 10:30 PM on Saturday. There is a break of 30 minutes in the middle of each class.&nbsp; Refreshments are served to students during the break.&nbsp; The lecture timings are convenient for working professionals.</p>
+<p>The NSU EMBA is a 50-credit program (16 courses of 3 credits each and one course of 2 credit hours) with three major components - foundation courses (15 credits), functional core courses (23 credits), and concentration courses (12 credits). Foundation courses prepare students with a broad base in quantitative areas, Economics, Management, Marketing, and Research Methodology. These courses must be completed before taking the functional core courses. The functional core courses comprise of a course in International Business and four courses in the functional areas of Management. Concentration courses (or major areas) in Finance, Human Resource Management, Management, Marketing, Management Information Systems and Supply Chain&nbsp; Management develop specialized skills in specific areas. Students are required to complete courses in a predetermined sequence offered throughout the year.</p></div>
+<div id="fifteen" class="tab-pane">
+<h5 class="no-margin">Admission</h5>
+<div style="padding-left: 240px;"><a class="btn btn-md btn-success admit-btn" href="http://apply.northsouth.edu:8080/admissionWeb/login.view">Apply Now</a></div>
+<p>&nbsp;</p>
+<p>New students are admitted to the program THREE times a year (in Spring, Summer and Fall).&nbsp; Applications must be submitted within the deadline announced in the admission advertisement.&nbsp; All admission queries should be directed to the EMBA Program Office, School of Business and Economics, NSU.&nbsp; To be eligible to apply for admission a candidate will require:</p>
+<ol>
+<li>A four-year Bachelor&rsquo;s or a three-year Honor&rsquo;s degree or a Master&rsquo;s degree in any discipline.</li>
+<li>At least Second Class in all exams or a minimum CGPA of 2.75 on a 4-point scale.</li>
+<li>At least three years of continuous work experience as executive after graduation. Candidates with a two-year Bachelor&rsquo;s degree will require five years of work experience and UGC equivalency certificate of the degree (wherever applicable) to be eligible for admission.</li>
+<li>Candidates do not require to sit for a written test, however, must pass an oral test for admission.</li>
+</ol>
+<p>The final decision on admission is taken on the basis of the following:</p>
+<ul>
+<li>Past academic performance (at high school, college, and university levels).</li>
+<li>Scores of interview administered by NSU.</li>
+<li>Interview with the Admission Committee.</li>
+<li>Work experience in managerial positions.</li>
+</ul>
+<p>Application packages can be found online at <strong>http://apply.northsouth.edu.</strong> Students can apply online by filling out the required forms and paying Taka 1,500 through bKash, Rocket, VISA, Master card, DBBL Nexus, etc.&nbsp; Only complete applications will be processed.&nbsp; A complete application should include:</p>
+<ul>
+<li>A graduate application form duly filled online</li>
+<li>Candidate&rsquo;s passport sized scanned photograph and e-signature.</li>
+</ul>
+<p>Candidates should submit the following documents on the date of interview:</p>
+<ul>
+<li>Candidate&rsquo;s two copies of passport size photographs and photocopy of National ID (NID).</li>
+<li>Parents&rsquo; passport sized signed Photographs and Photocopies of NID.</li>
+<li>One set of notarized or attested photocopies of all previous certificates and transcripts (mark sheets). Incomplete or improper attestation will deem the application void.</li>
+<li>One set of appointment letter(s) and experience certificate(s) (attested).
+<p><strong>INTERNATIONAL STUDENTS</strong></p>
+<p>North South University welcomes international students for admission. Special consideration is given to the students from SAARC countries and Southeast Asia.&nbsp; Prospective students are advised to contact the Director, EMBA Programs, through email at: mbainfo@northsouth.edu</p>
+<p>International students are advised to process their application at least six months prior to the commencement of the program.&nbsp; Students should advise the Educational Testing Service to send their GMAT score directly to the Director, EMBA Program. The code number of North South University is 2505. Foreign nationals currently living in Bangladesh may take the NSU admission interview in lieu of GMAT. All international students must provide a financial solvency certificate from a bank. The document must mention that the applicant or the sponsor has the ability to bear the educational and related expenses of the student during the period of study at North South University.&nbsp; The applicant must also hold valid visa to study at NSU. Responsibility of getting a visa from a Bangladesh Consulate lies with the student. NSU does not provide accommodation or housing or dormitory facility.</p>
+</li>
+</ul></div>
+<div id="sixteen" class="tab-pane">
+<h5 class="no-margin">Financial Information about EMBA Program</h5>
+<p>Total cost of the program ranges from Taka 2,63,000 to Taka 3,80,000, depending on the standing of the student at the time of admission.&nbsp; All fees are subject to change.&nbsp; Please check with the EMBA Program Office for the most recent fee structure.</p>
+<p>Cost/Fee Structure&nbsp; Amount</p>
+<p>Tuition Fee per credit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 7,500*3=22,5000</p>
+<p>Student Activity Fee per semester&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 3,000</p>
+<p>Computer Lab Fee per semester&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tk. 2,000</p>
+<p><span style="text-decoration: underline;">Library Fee per semester&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tk. 1,000</span></p>
+<p><em>*effective from Spring 2026</em></p>
+<p>Please note that all students must pay a non-refundable, one time only admission fee of Tk. 50,000.</p>
+<p>North South University recognizes the need for supporting meritorious and needy students. The support is provided through SCHOLARSHIP/FINANCIAL AID.&nbsp; Continuation of financial aid is subject to satisfactory academic performance. Please check with the EMBA Program Office for details.</p></div>
+<div id="seventeen" class="tab-pane">
+<h5 class="no-margin">Degree requirements</h5>
+<p>A student must complete the required number of courses (and credits) with a &lsquo;B-&rsquo; average (i.e., with a minimum CGPA of 2.70/4.0) to earn the EMBA degree. The minimum CGPA requirement has been shifted from 2.50 to 2.70 according to the decision of the 100th Academic Council Meeting held on 27 April 2026. If in any semester the CGPA drops below 2.70 the student is put on academic probation. A student will be dismissed after being on probation for two consecutive semesters.</p>
+<p>Students who have completed similar courses at their undergraduate or graduate levels from recognized institutions are eligible for waiver of a maximum of 15 credit hours (or five courses) from the foundation level courses. A waiver decision will be made upon a student&rsquo;s admission to the program. As the residency requirement at least 35 credit hours must be completed at NSU for the degree. The decision of the university is final on the issue of waiver of credit.</p></div>
+<div id="eighteen" class="tab-pane">
+<h5 class="no-margin">Curriculum</h5>
+<p><strong><img src="newassets/images/emba-degree-flow-chart-revised-page.jpg" alt="" width="1650" height="1275"><br></strong></p>
+<h3><a href="newassets/images/mba/obe-curriculum-emba.pdf" target="_blank" rel="noopener"><strong>Curriculum &amp; Course Description...</strong></a></h3>
+<p>&nbsp;</p>
+<p><strong>Foundation Courses &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (15 Cr)</strong></p>
+<ul>
+<li>EMB 500 Communication Skills for Managers</li>
+<li>EMB 501 Quantitative Tools in Business</li>
+<li>EMB 502 Business Economics</li>
+<li>EMB 510 Principles of Accounting and Finance</li>
+<li>EMB 520 Principles of Management and Marketing</li>
+</ul>
+<p><strong>Functional Core Courses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (23 Cr)</strong></p>
+<ul>
+<li>EMB 601 Organizational Behavior</li>
+<li>EMB 602 Human Resource Management</li>
+<li>EMB 620 Strategic Marketing</li>
+<li>EMB 650 Operations Management</li>
+<li>EMB 660 Corporate Finance</li>
+<li>EMB 670 International Business</li>
+<li>EMB 690 Strategic Management</li>
+<li>BUS 700 Seminar</li>
+</ul>
+<p><strong>Major Courses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (12 Cr)<br></strong>(Any 4 from a major)</p>
+<p><strong>FINANCE </strong></p>
+<ul>
+<li>FIN 635 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Financial Analysis and Control</li>
+<li>FIN 637 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Investment Theory</li>
+<li>FIN 640 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Real Estate Finance</li>
+<li>FIN 642 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Financial Markets and Institutions</li>
+<li>FIN 643 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Capital Investment Decisions</li>
+<li>FIN 644 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Commercial Bank Management</li>
+<li>FIN 645 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; International Financial Management</li>
+<li>FIN 646 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Theory of Finance</li>
+<li>FIN 647 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Financial Derivatives</li>
+<li>FIN 649 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Special Topics in Finance&nbsp;</li>
+<li>FIN 650 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Project Appraisal</li>
+<li>FIN 680 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case Studies in Finance</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>MANAGEMENT</strong></p>
+<ul>
+<li>MGT 601 Management Thought</li>
+<li>MGT 602 Management Science</li>
+<li>MGT 604 Organizational Development &amp; Change</li>
+<li>MGT 605 Industrial Relations&nbsp;</li>
+<li>MGT 607 Entrepreneurship</li>
+<li>MGT 610 Management of Innovation and Technology</li>
+<li>MGT 619 Services Management</li>
+<li>MGT 656 Leadership Theory and Practice</li>
+<li>MGT 660 Comparative Management</li>
+<li>MGT 670 Strategic Planning</li>
+<li>MGT 675 Total Quality Management (TQM)</li>
+<li>MGT 680 Supply Chain Management&nbsp;</li>
+<li>MGT 682 Environmental Management</li>
+<li>MGT 690 Seminar on Advanced Management</li>
+</ul>
+<p><strong>MARKETING</strong></p>
+<ul>
+<li>MKT 621 Buyer Behavior</li>
+<li>MKT 623 Promotional Management</li>
+<li>MKT 624 Brand Management</li>
+<li>MKT 625 Distribution Management</li>
+<li>MKT 626 Retail Management and Merchandising</li>
+<li>MKT 627 Services Marketing</li>
+<li>MKT 628 Digital Marketing</li>
+<li>MKT 629 Product Planning and Development</li>
+<li>MKT 630 Business-to-Business Marketing</li>
+<li>MKT 631 Marketing Research</li>
+<li>MKT 633 Global Marketing</li>
+<li>MKT 635 Special topics in Marketing</li>
+<li>MKT 636 Marketing Analytics</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>HUMAN RESOURCE MANAGEMENT</strong></p>
+<ul>
+<li>HRM 602 Human Resource Planning and Staffing</li>
+<li>HRM 603 Training and Development</li>
+<li>HRM 604 Performance Appraisal and Compensation Systems</li>
+<li>HRM 605 Industrial Relations</li>
+<li>HRM 610 Employment and Labor Laws in Bangladesh</li>
+<li>HRM 631 Managerial Skills Development</li>
+<li>HRM 645 Interpersonal Relations and Group Dynamics</li>
+<li>HRM 650 Managing High Performance</li>
+<li>HRM 660 Strategic Human Resource Management</li>
+<li>HRM 675 Advanced Wage and Employment Theory</li>
+<li>HRM 680 Comparative Perspectives on HRM</li>
+<li>HRM 690 Special Topics in Human Resource Management</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>MANAGEMENT AND INFORMATION SYSTEMS (MIS)</strong></p>
+<ul>
+<li>MIS 651 System Design and Development&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 652 Management Information Systems&nbsp; <strong>(mandatory)</strong></li>
+<li>MIS 653 E-Business Strategies &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 654 Database Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 655 E-Government and Information Ethics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 657 Business Analytics and Data Science&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 661 Decision Support and Expert Systems&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 662 Advanced Database Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 663 &nbsp;IT Entrepreneurship&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 664 Seminar on Advanced MIS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 665 Information Security and Policies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 666 IT Project Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>MIS 667 Networking for Corporate Management&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li>MIS 668 Knowledge Management in Business Organizations</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>SUPPLY CHAIN MANAGEMENT (SCM)</strong></p>
+<ul>
+<li>SCM 601/MGT 680 Supply Chain Management&nbsp; <strong>(mandatory)</strong></li>
+<li>SCM 602 Managing Global Supply Chain&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 603 Procurement and Sourcing&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 604 Supply Chain Management Strategies&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 605 Supply Chain Analytics&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 606 Distribution Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+<li>SCM 607 Demand Planning and Inventory Management</li>
+<li>SCM 608 Green Supply Chain Management</li>
+</ul></div>
+<div id="nineteen" class="tab-pane">
+<h5 class="no-margin">Core Faculty Members</h5>
+<h4>(A-Z)</h4>
+<h4><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/ziaul-haq-adnan.html">Dr. Ziaul Haq Adnan</a></h4>
+<p>Ph.D. (The University of North Carolina at Charlotte, USA)</p>
+<p><strong>Dr. Sharif Nurul Ahkam</strong></p>
+<h4>DBA (Kent State University, USA)</h4>
+<h4>Dr. Jashim Uddin Ahmed</h4>
+<p>Ph.D. (Manchester University, UK)</p>
+<h4><a href="faculty-members/sbe/economics/dr.-rafayal-ahmed-rfah.html">Dr. Rafayal Ahmed </a></h4>
+<h4>Ph.D., Northwestern University, USA</h4>
+<p><strong>Dr. Alima Aktar</strong></p>
+<p>Ph.D (University of Utara Malaysia, UUM)</p>
+<p><strong>Dr. Md. Shahedul Alam</strong></p>
+<p>Ph.D.&nbsp; (University of Waterloo, Canada)</p>
+<p><strong>Dr. Sakib Bin Amin</strong></p>
+<p>Ph.D. (Durham University, UK)</p>
+<p><a href="faculty-members/sbe/marketing-ib/md-nekmahmud-argon.html"><strong>Dr. Nekmahmud Argon </strong></a></p>
+<p>Ph.D. (Hungarian University of Agriculture and Life Sciences, Budapest)</p>
+<p><strong>Dr. M. Hafizur Rahman Arman</strong></p>
+<p>Ph.D. (Purdue University, USA)</p>
+<p><strong>Dr. Samim Al Azad</strong></p>
+<p>Ph.D. (Seoul National University)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/dr.-abdul-hannan-chowdhury.html"><strong>Dr. Abdul Hannan Chowdhury</strong></a></p>
+<p>Vice Chancellor, NSU</p>
+<p>Ph.D. (Northeastern University, USA)</p>
+<p><strong>Dr. Tamgid Ahmed Chowdhury<br></strong>Ph.D. (Macquarie University, Australia)</p>
+<p><strong>Dr. Mainul Islam Chowdhury</strong></p>
+<p>Ph.D. Northern&nbsp; Illinois University</p>
+<p><a href="faculty-members/sbe/mgt/muhammad-faisol-chowdhury-mfc.html"><strong>Dr. Muhammad Faisol Chowdhury </strong></a></p>
+<p>Ph.D. (University of Glasgow, UK)</p>
+<p><strong>Dr. Syed Mortaza Asif Ehsan</strong></p>
+<p>Ph.D. (University of Virginia Tech)</p>
+<p><a href="faculty-members/sbe/acc-fin/mohammad-islam-biswas.html"><strong>Dr. Mohammad Islam Biswas</strong></a></p>
+<p>Ph.D. (Xiamen University, China)</p>
+<p><strong>Dr. Fahim Faisal</strong></p>
+<p>Ph.D, (Queensland University of Technology, Australia)</p>
+<p><strong>Dr. Gour Gobinda Goswami</strong><br>Ph.D. (University of Wisconsin, USA)</p>
+<p><strong>Dr. Ummaha Tul Hazra</strong></p>
+<p>Ph.D.&nbsp; (University of Cape Town, South Africa)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/economics/dr.-samiul-haque.html"><strong>Dr. Samiul Haque</strong></a></p>
+<h4>Ph.D. (Purdue University, USA)</h4>
+<p><strong>Dr. M. Ismail Hossain <br></strong>Ph.D. (University of Toronto, Canada)</p>
+<h4><a href="faculty-members/sbe/economics/dr.-md.-javed-hossain.html">Dr. Javed Hossain </a></h4>
+<h4>Ph.D., Iowa State University , USA</h4>
+<h4><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/s.-s.-m.-sadrul-huda.html">Dr. S. S. M. Sadrul Huda </a></h4>
+<p>Ph.D. (Asia-E-University, Malaysia)</p>
+<p><a href="faculty-members/sbe/marketing-ib/md.-tamhid-ul-islam.html"><strong>Dr. Md. Tamhid Ul Islam</strong></a></p>
+<p>Ph.D. (Aston University, UK)</p>
+<p><a href="faculty-members/sbe/acc-fin/dr.-farhana-islam.html"><strong>Dr. Farhana Islam [FI]</strong></a></p>
+<p>Ph.D., University of Newcastle, Australia</p>
+<p><a href="faculty-members/sbe/marketing-ib/dr.-mehree-iqbal-mei.html"><strong>Dr. Mehree Iqbal </strong></a></p>
+<p>Ph.D. (Curtin University, Australia)</p>
+<p><strong>Dr. Zulkarin Jahangir</strong></p>
+<p>Ph.D. (University of London)</p>
+<p><strong>Dr. Md. Nurul Kabir</strong></p>
+<p>Ph.D. (Griffith University, Australia)</p>
+<p><strong>Dr. AKM Waresul Karim</strong></p>
+<p>Dean, School of Business and Economics</p>
+<p>Ph.D. (University of Leeds, UK)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/atikur-rahman-khan.html"><strong>Dr. Atikur Rahman Khan </strong></a></p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><a href="faculty-members/sbe/economics/md.-syeed-uz-zaman-khan.html"><strong>Dr. Md. Syeed Uz Zaman Khan </strong></a></p>
+<p>Ph.D., University of Manitoba, Canada</p>
+<p><strong>Dr. Abu Nahian Faisal Khan</strong></p>
+<p>Ph.D. (University of New Orleans,New&nbsp; Orlens,LA)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/acc-fin/mr.-tanvir-nabi-khan.html"><strong>Dr. Tanvir Nabi Khan</strong></a></p>
+<p>Ph.D. (The University of Nottingham, UK)</p>
+<p><a href="faculty-members/sbe/economics/dr.-saima-khan-sakn.html"><strong>Dr. Saima Khan </strong></a></p>
+<p>Ph.D., National University of Singapore</p>
+<p><a href="faculty-members/sbe/marketing-ib/shamim-ahmed-khan.html"><strong>Dr. Shamim Ahmed Khan </strong></a></p>
+<p>Ph.D., Monash University, Malaysia</p>
+<p><a href="faculty-members/sbe/marketing-ib/dr.-tareq-mahbub.html"><strong>Dr. Tareq Mahbub </strong></a></p>
+<p>Ph.D.(Asian Institute of Technology (AIT)</p>
+<p><strong>Dr. Khandaker Md.Nahin Mamun</strong></p>
+<p>Ph.D. (University of&nbsp; Strathclyde, Glasgow)</p>
+<p><strong>Dr. M. Khasro Miah<br></strong>Ph.D. (Nagoya University, Japan)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/acc-fin/dr.-fj-mohaimen-fjm.html"><strong>Dr. FJ Mohaimen </strong></a></p>
+<p>Ph.D. (Victoria University of Wellington, New Zealand)</p>
+<p><strong>Dr. Farzana Nahid</strong></p>
+<p>Ph.D. (University&nbsp; Of Malaya, Kuala Lumpur, Malaysia)</p>
+<p><strong>Dr. Kanti Ananta Nuzhat</strong></p>
+<p>Ph.D. (Monash University, Australia)</p>
+<p><a href="faculty-members/sbe/economics/tapas-kumar-paul.html"><strong>Dr. Tapas Kumar Paul [TPA]</strong></a></p>
+<p>Ph.D., University of Missouri, Columbia, USA</p>
+<p><strong>Dr. Asad Karim Khan Priyo</strong></p>
+<p>Ph.D. (University of Toronto, Canada)</p>
+<p><strong>Dr. Md. Arifur Rahman</strong></p>
+<p>Ph.D. (University of Western, Sydney)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/dr.-mehe-z.-rahman.html"><strong>Dr. Mehe Z. Rahman </strong></a></p>
+<p>Ph.D. (National University of Malaysia)</p>
+<p><strong>Dr. A.F.M. Ataur Rahman</strong><br>Ph.D. (American University, Washington DC, USA)</p>
+<p><strong>Dr. A.K.M. Atiqur Rahman</strong><br>Ph.D. (University of Houston, USA)</p>
+<p><strong>Dr. Mustafa Abdur Rahman<br></strong>Ph.D. (University of Western Sydney, Australia)</p>
+<p><strong>Dr. Muhammad Sabbir Rahman</strong></p>
+<p>Ph.D. (International Islamic University, Malaysia)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/sungida-rashid.html"><strong>Dr. Sungida Rashid </strong></a></p>
+<p>Ph.D. (Southern Illinois University, USA)</p>
+<p><strong>Dr. Mahmud A. Shareef<br></strong>Ph.D. (Carleton University, Canada)</p>
+<p><a href="faculty-members/sbe/mgt/nazlee-siddiqui.html"><strong>Dr. Nazlee Siddiqui </strong></a></p>
+<p>Director, MBA and EMBA Programs</p>
+<p>Ph.D. (Western Sydney University, Australia)</p>
+<p><a href="http://www.northsouth.edu/faculty-members/sbe/mgt/dr.-md.-shamim-talukder.html"><strong>Dr. Md. Shamim Talukder</strong></a></p>
+<p>Ph.D. (Huazhong University of Science and Technology, China)</p>
+<p><strong>Dr. Ahmed Tazmeen</strong></p>
+<p>Ph.D. (University of Manitoba, Canada)</p>
+<p><a href="faculty-members/sbe/mgt/zerin-tasnim.html"><strong>Dr. Zerin Tasnim </strong></a></p>
+<p>Ph.D. (University Putra Malaysia)</p>
+<p><a href="faculty-members/sbe/economics/ahmed-sadek-yousuf/"><strong>Dr. Ahmed Sadek Yousuf </strong></a></p>
+<p>Ph.D. (University of Arkansas, USA)</p>
+<p><strong>Dr. Muslima Zahan</strong></p>
+<p>Ph.D. (University of Turin, Italy)</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>&nbsp;</h4>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h4>&nbsp;</h4>
+<p>&nbsp;</p>
+<p>&nbsp;</p></div>
+<div id="twenty" class="tab-pane">
+<h5 class="no-margin">Contact</h5>
+<p><strong>MBA &amp; EMBA Program Office</strong></p>
+<p>Room 631, 6<sup>th</sup> Floor, North Academic Building</p>
+<p>15 B Bashundhara, Dhaka 1229</p>
+<p>Phone: +880 2 5566-8200 ext. 1760/1764/6307/6309</p>
+<p>Email: mbainfo@northsouth.edu</p>
+<p>&nbsp;</p>
+<p><strong>People</strong></p>
+<p><strong>Dr. Nazlee Siddiqui, Director</strong></p>
+<p>Md. Mahbubul Alam, Deputy Director</p>
+<p>&nbsp;</p>
+<p><strong>Supports</strong></p>
+<p>Mr. Shahedul Haq Khan Majlish&mdash;Extension 1764</p>
+<p>Mr. Jawhar Lal Dhar &ndash; Extension 1760</p>
+<p>Ms. Nahida Arafat &ndash; Extension 6309</p>
+<p>Mr. Ahmad Imraan &ndash; Extension 6307</p></div>
+<div id="twentyone" class="tab-pane">
+<h5 class="no-margin">Recent Highlights</h5>
+<p style="text-align: center;"><strong>In Memoriam</strong></p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="newassets/images/mba/mr.-rubaiyat-jamil.jpg" alt="" width="300" height="400"></p>
+<p>Mr. Rubaiyat Jamil, a respected business leader and EMBA alumnus of North South University, passed away, leaving behind a legacy of leadership and integrity.</p>
+<p>He was actively involved in overseeing ICE Technologies.&nbsp;Mr. Jamil was a valued member of several prominent business organizations, including the Metropolitan Chamber of Commerce and Industries, International Chamber of Commerce Bangladesh, German Chamber of Commerce and Industries, and the Bangladesh Association of Software and Information Services (BASIS).</p>
+<p>Beyond his professional achievements, he was closely connected to the social community through his memberships at Gulshan Club, International Club Dhaka, Gulshan Youth Club, and Savar Golf Club.</p>
+<p>Mr. Rubaiyat Jamil will be remembered for his contributions, character, and the lasting impact he made on those around him.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong>Sports Achievement</strong></p>
+<p>The MBA students and Faculties have enthusiastically participated in the Indoor Badminton Tournament &ldquo;The Shuttle Master&rdquo; between February 01&ndash;07, 2026. Congratulations are extended to the following MBA family members:</p>
+<p><img src="newassets/images/mba/whatsapp-image-2026-02-08-at-9.08.59-pm-(1).jpeg" alt="Mr. Manas and Hasibul Hoque for  achieving the Runner Up position in the Male Student and Officer category in the tournament." width="450" height="300"><img src="newassets/images/mba/whatsapp-image-2026-02-08-at-9.08.59-pm.jpeg" alt="" width="450" height="300"></p>
+<ul>
+<li>Manas Banik and Hasibul Hoque for achieving the Runner Up position in the Male Student and Officer category in the tournament.</li>
+<li>Professor Nazlee Siddiqui, PhD, Director of the MBA and EMBA programs has achieved the Champion trophy, in the Female faculty and Officer category along with Ms. Humaira Haque from Finance Department, School of Business and Economics.&nbsp;</li>
+</ul>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img src="newassets/images/mba/orientation-pic-1.png" width="1031" height="484"></p>
+<p style="text-align: justify;">The MBA &amp; EMBA Programs held the <span style="font-family: arial, helvetica, sans-serif;">2026</span> Spring orientation session on January 18. At this session, the MBA &amp; EMBA program director welcomed the new students to the exciting learning journey, along with North South University (NSU) Vice Chancellor, Pro-Vice Chancellor and the distinguished academics. Ms. Hosne Ara Loma, Human Resource Director, Nestle Bangladesh PLC, had graced the session as Guest Speaker and engaged the new students in a discussion about the role of mentoring in developing Business Leaders.&nbsp;</p>
+<h4 class="section-title" style="text-align: left;">&nbsp;</h4>
+<h4 class="section-title" style="text-align: left;"><code><span style="font-family: arial, helvetica, sans-serif; font-size: 14pt;">NSU E/MBA program academic, Dr. Muhammad Sabbir Rahman, Professor in Marketing and International Business is being commended for impactful research by Wiley, a Globally renowned publisher:</span></code><img style="display: block; margin-left: auto; margin-right: auto;" src="newassets/images/mba/dr.-sabbir.png" alt="" width="842" height="298"></h4>
+<h4 class="section-title"><img style="display: block; margin-left: auto; margin-right: auto;" src="newassets/images/mba/orientation-pic-2.png" alt="" width="573" height="422"></h4>
+<h5 class="section-title" style="text-align: left;"><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">The E/MBA office is proud of our Alumni, Mr. Mehrub Mobin Bhuiyan, who has been awarded the most eminent academic achievement: <strong>Chancellor&rsquo;s Gold Medalist</strong>&mdash;in the NSU Graduate Programs.</span></h5>
+<h4 class="section-title" style="text-align: left;">&nbsp;</h4>
+<h4 class="section-title" style="text-align: left;">&nbsp;</h4>
+<h4 class="section-title" style="text-align: left;">&nbsp;</h4></div>
+<div id="twentytwo" class="tab-pane active">
+<h5 class="no-margin">Vision & Mission</h5>
+<div class="container py-4"><!-- Vision and Mission -->
+<div class="mb-5">
+<div class="mb-4">
+<h3 class="section-title">Vision</h3>
+<p>The EMB and MBA programs aspire to lead business education in Bangladesh, South Asian region and globally by promoting economic and social values in business. This vision is embedded in values of:</p>
+<p># Excellence in ethical and inclusive leadership</p>
+<p># Knowledge of Sustainability</p>
+<p># Innovation</p>
+<p># Globalization</p>
+</div>
+<div class="mb-4">
+<h3 class="section-title">Mission</h3>
+<p>The EMBA and MBA programs offer quality education in diversified fields of business for ambitious students and career focused managers. The programs deliver business leaders who deliver sustainable economic and social value. The hallmarks of the programs are innovative teaching and experiential learning, impactful research, and meaningful engagement with stakeholders in local and global business communities.</p>
+</div>
+</div>
+<!-- Learning Outcomes -->
+<div class="bg-white rounded shadow-sm mb-5">
+<div class="p-0">
+<div class="table-responsive">
+<table class="table table-striped table-hover mb-0">
+<thead class="table-header-bg" style="background: #444; color: white;">
+<tr>
+<th scope="col" width="5%">No.</th>
+<th scope="col" width="25%">Program Learning Competencies</th>
+<th scope="col" width="70%">Program Learning Outcomes</th>
+</tr>
+</thead>
+<tbody class="with-list">
+<tr>
+<th scope="row">1</th>
+<td class="font-weight-bold">Managerial Communications</td>
+<td>
+<ul class="mb-0">
+<li>Business Communication Skills: Persuade effectively towards achieving managerial objectives</li>
+<li>Interpersonal communication skills: Apply digital &amp; information communication technology (ICT) and modern business practices to communicate better with different stakeholders</li>
+<li>Networking skills: Organize and leverage business networks to address social issues affecting company stakeholders and society</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">2</th>
+<td class="font-weight-bold">Critical Thinking and Decision Making</td>
+<td>
+<ul class="list-unstyled mb-0">
+<li>Knowledge Acquisition Skills: Apply appropriate analytic frameworks and industry-driven principles across business areas</li>
+<li>Critical Thinking and negotiation skills: Decide critically with commendable leadership and negotiation skills</li>
+<li>Decision Making Skills: Determine relevant decision criteria and alternatives, and identify optimal solutions</li>
+<li>Information Management and lifelong learning: Compose timely information for individual and team decision making</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">3</th>
+<td class="font-weight-bold">Integration of Management Tools and Techniques</td>
+<td>
+<ul class="list-unstyled mb-0">
+<li>Industry oriented problem-solving skills: Integrate tools and techniques from major business functions to solve complex environmental and management challenges</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">4</th>
+<td class="font-weight-bold">Global Perspectives</td>
+<td>
+<ul class="list-unstyled mb-0">
+<li>Sustainability skills: Structure business decisions considering sustainable economic and social values within global perspectives</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th scope="row">5</th>
+<td class="font-weight-bold">Ethical Considerations</td>
+<td>
+<ul class="list-unstyled mb-0">
+<li>Ethics and moral professionalism skills: Plan for business with utmost professionalism by evaluating ethical considerations in management and entrepreneurship</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div></div>
+<div id="twentythree" class="tab-pane">
+<h5 class="no-margin">How to Apply</h5>
+</div>
+</div>
+</div>
+</div>
+<div class="space30">&nbsp;</div></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .carousel-control-next,
+  .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+  }
+</style>
+
+<style>
+  :root {
+    --nsu-blue: #1a3a6c;
+    --nsu-light-blue: #2a5a9c;
+    --nsu-gold: #d4af37;
+  }
+
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  .hero-section {
+    background: linear-gradient(rgba(26, 58, 108, 0.8), rgba(26, 58, 108, 0.9)), url("https://source.unsplash.com/random/1600x900/?university") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 50px;
+  }
+
+  .hero-section h1,
+  .hero-section p {
+    text-align: left;
+  }
+
+  .section-title {
+    color: var(--nsu-blue);
+    border-bottom: 2px solid var(--nsu-gold);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+  }
+
+  .section-title:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--nsu-light-blue);
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .photo-gallery {
+    margin: 30px 0;
+  }
+
+  .gallery-img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery-img:hover {
+    transform: translateY(-5px);
+  }
+
+  .testimonial-card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+    text-align: left;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .testimonial-header {
+    background-color: var(--nsu-blue);
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 15px 20px;
+    text-align: left;
+  }
+
+  .testimonial-body {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .quote-icon {
+    color: var(--nsu-gold);
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .alumni-name {
+    font-weight: bold;
+    color: var(--nsu-blue);
+    margin-top: 15px;
+    text-align: left;
+  }
+
+  .alumni-position {
+    color: #666;
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .video-caption {
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .guest-speaker-title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  footer {
+    background-color: var(--nsu-blue);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+    text-align: left;
+  }
+
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    margin-right: 15px;
+  }
+
+  .footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .social-icons a:hover {
+    color: var(--nsu-gold);
+  }
+
+  .footer-section h5 {
+    text-align: left;
+  }
+
+  .footer-section p {
+    text-align: left;
+  }
+
+  .lh-2 {
+    line-height: 1.7rem !important;
+  }
+
+  .testimonial-header h5 {
+    color: white;
+  }
+
+.with-list ul {
+  list-style: disc;       /* or circle, square */
+  padding-left: 20px;     /* needed to show bullets */
+}
+
+.with-list ol {
+  list-style: decimal;    /* numbers */
+  padding-left: 20px;
+}
+</style>
+
+
+        <footer class="footer full-color">
+<div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="regular">North South University</h5>
+                    <img src="newassets/images/nsu-photo/slogan.png" style="width:300px;margin-top:0px;margin-left:-10px">
+                    <p>Bashundhara, Dhaka-1229, Bangladesh
+                        <br/>
+                        <i class="fa fa-phone"></i> +880-2-55668200 &nbsp;&nbsp;|&nbsp;&nbsp; <i class="fa fa-fax"></i> Fax: +880-2-55668202
+                        <br/>
+                        <i class="fa fa-envelope"></i> registrar@northsouth.edu
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-box">
+                        <ul class="social-list">
+                            <li>
+                                <a href="https://www.facebook.com/NorthSouthUniversity" class="btn btn-default social-icon" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/NorthSouthU" class="btn btn-default social-icon" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/118022124355407741002" class="btn btn-default social-icon" target="_blank">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/NorthSouthUniversity/" class="btn btn-default social-icon" target="_blank">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/NorthSouthUniversity" class="btn btn-default social-icon" target="_blank">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="copyright">
+                        Developed & Maintained by IT Office, NSU
+                        <br/> &copy 1993-2025 North South University. All rights reserved.
+                    </div>
+                </div>
+    </div>
+            </div>
+        </footer>
+<div class="heavenrank" style="position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden;">
+
+
+<a href="https://www.nwpg.gov.za/index/">slot thailand</a>
+
+<a href="https://hotelumbria-orvieto.it/en/home-3/">toto</a>
+
+
+
+
+<a href="https://shopwine.me/category/vino-za-podarak">toto</a>
+<a href="https://ezi2care.jkm.gov.my/">slot gacor</a>
+
+<a href="https://publisher-guidelines.com/">daftar indobet</a>
+
+
+
+<a href="https://gov.breauxbridgelive.com/">nobu 99</a>
+
+<a href="https://indiansteels.com/">66lottery</a>
+<a href="https://atpautomotive.com/">Toto Slot</a>
+<a href="https://www.dpsmathuraroad.org/">toto slot</a>
+<a href="https://ltdtoto88.org/">LTDTOTO</a>
+<a href="https://bobatotovip.com/">BOBATOTO</a>
+<a href="https://bobatoto.com">bobatoto</a>
+<a href="https://linklist.bio/sesetoto">sessetoto</a>
+<a href="https://www.nobita138.com/">nobita138 login</a>
+<a href="https://happycity.com.co/reservas/">BOBATOTO</a>
+<a href="https://policlinicacapaoraso.com.br/">SLOT THAILAND</a>
+<a href="https://manager.quickmax.io/">Pakde4D</a>
+</div>
+</body>
+</html>
